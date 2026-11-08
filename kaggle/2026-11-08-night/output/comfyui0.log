@@ -1,0 +1,60 @@
+lora key not loaded: diffusion_model.blocks.5.cross_attn.k_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.5.cross_attn.norm_k_img.diff
+lora key not loaded: diffusion_model.blocks.5.cross_attn.v_img.diff_b
+lora key not loaded: diffusion_model.blocks.5.cross_attn.v_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.5.cross_attn.v_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.6.cross_attn.k_img.diff_b
+lora key not loaded: diffusion_model.blocks.6.cross_attn.k_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.6.cross_attn.k_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.6.cross_attn.norm_k_img.diff
+lora key not loaded: diffusion_model.blocks.6.cross_attn.v_img.diff_b
+lora key not loaded: diffusion_model.blocks.6.cross_attn.v_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.6.cross_attn.v_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.7.cross_attn.k_img.diff_b
+lora key not loaded: diffusion_model.blocks.7.cross_attn.k_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.7.cross_attn.k_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.7.cross_attn.norm_k_img.diff
+lora key not loaded: diffusion_model.blocks.7.cross_attn.v_img.diff_b
+lora key not loaded: diffusion_model.blocks.7.cross_attn.v_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.7.cross_attn.v_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.8.cross_attn.k_img.diff_b
+lora key not loaded: diffusion_model.blocks.8.cross_attn.k_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.8.cross_attn.k_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.8.cross_attn.norm_k_img.diff
+lora key not loaded: diffusion_model.blocks.8.cross_attn.v_img.diff_b
+lora key not loaded: diffusion_model.blocks.8.cross_attn.v_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.8.cross_attn.v_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.9.cross_attn.k_img.diff_b
+lora key not loaded: diffusion_model.blocks.9.cross_attn.k_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.9.cross_attn.k_img.lora_up.weight
+lora key not loaded: diffusion_model.blocks.9.cross_attn.norm_k_img.diff
+lora key not loaded: diffusion_model.blocks.9.cross_attn.v_img.diff_b
+lora key not loaded: diffusion_model.blocks.9.cross_attn.v_img.lora_down.weight
+lora key not loaded: diffusion_model.blocks.9.cross_attn.v_img.lora_up.weight
+lora key not loaded: diffusion_model.img_emb.proj.0.diff
+lora key not loaded: diffusion_model.img_emb.proj.0.diff_b
+lora key not loaded: diffusion_model.img_emb.proj.1.diff_b
+lora key not loaded: diffusion_model.img_emb.proj.1.lora_down.weight
+lora key not loaded: diffusion_model.img_emb.proj.1.lora_up.weight
+lora key not loaded: diffusion_model.img_emb.proj.3.diff_b
+lora key not loaded: diffusion_model.img_emb.proj.3.lora_down.weight
+lora key not loaded: diffusion_model.img_emb.proj.3.lora_up.weight
+lora key not loaded: diffusion_model.img_emb.proj.4.diff
+lora key not loaded: diffusion_model.img_emb.proj.4.diff_b
+Requested to load WAN21
+loaded partially; 8486.89 MB usable, 8416.52 MB loaded, 920.66 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:20<07:01, 140.54s/it]
+ 50%|█████     | 2/4 [05:14<05:20, 160.10s/it]
+ 75%|███████▌  | 3/4 [07:46<02:36, 156.58s/it]
+100%|██████████| 4/4 [10:23<00:00, 156.82s/it]
+100%|██████████| 4/4 [10:23<00:00, 155.98s/it]
+Requested to load WanVAE
+Unloaded partially: 2608.61 MB freed, 5807.91 MB remains loaded, 102.59 MB buffer reserved, lowvram patches: 542
+loaded completely; 305.26 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:12:26
+got prompt
+Requested to load WanTEModel
+loaded completely; 7597.55 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 4154.47 MB freed, 1653.44 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 810

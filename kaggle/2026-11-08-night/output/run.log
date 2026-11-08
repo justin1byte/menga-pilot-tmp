@@ -1,0 +1,53 @@
+[    0.1s] menga kernel v3: 19 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-b4ea303e-f051-759c-ccd6-3186952bea59)', 'GPU 1: Tesla T4 (UUID: GPU-591be0b8-f5ce-a92c-aee0-7735a0431e63)']; python 3.13.16
+[    8.2s] torch 2.11.0+cu130, CUDA 13.0
+[    8.2s] work dir /kaggle/tmp: 1038 GB free
+[   17.4s] model vae: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/vae/wan_2.1_vae.safetensors 0.3 GB in 3s
+[   51.9s] model lora: Kijai/WanVideo_comfy@8260d42/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors 1.5 GB in 38s
+[   88.7s] model text: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors 6.7 GB in 75s
+[  118.9s] model low: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf 9.7 GB in 105s
+[  156.5s] model high: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf 9.7 GB in 142s
+[  156.5s] ComfyUI and models ready in 148s
+[  194.5s] setup done in 194s; 2 worker(s)
+[  527.1s] s-002-R-1: high-noise steps done in 332.3s on GPU 1
+[  601.2s] s-002-L-5: high-noise steps done in 406.4s on GPU 0
+[  865.7s] s-002-R-3: high-noise steps done in 264.2s on GPU 0
+[  896.5s] s-002-R-5: ComfyUI 0 went down during the high-noise steps (<urlopen error [Errno 111] Connection refused>); restarting it and retrying
+[  954.7s] s-002-R-4: high-noise steps done in 427.3s on GPU 1
+[ 1249.2s] s-002-R-6: high-noise steps done in 294.3s on GPU 1
+[ 1274.5s] s-002-R-5: high-noise steps done in 408.6s on GPU 0
+[ 1307.4s] s-003-L-2: ComfyUI 1 went down during the high-noise steps (<urlopen error [Errno 111] Connection refused>); restarting it and retrying
+[ 1545.1s] s-003-L-1: high-noise steps done in 270.4s on GPU 0
+[ 1616.1s] s-003-L-2: high-noise steps done in 366.7s on GPU 1
+[ 1651.4s] s-003-L-4: ComfyUI 1 went down during the high-noise steps (<urlopen error [Errno 111] Connection refused>); restarting it and retrying
+[ 1651.4s] s-003-L-3: ComfyUI 0 went down during the high-noise steps (<urlopen error [Errno 111] Connection refused>); restarting it and retrying
+[ 1967.1s] s-003-L-3: high-noise steps done in 421.8s on GPU 0
+[ 2103.6s] s-003-L-4: high-noise steps done in 487.3s on GPU 1
+[ 2227.6s] s-003-R-1: high-noise steps done in 260.3s on GPU 0
+[ 2384.0s] s-003-R-2: high-noise steps done in 280.2s on GPU 1
+[ 2412.2s] s-004-L-1: ComfyUI 1 went down during the high-noise steps (<urlopen error [Errno 111] Connection refused>); restarting it and retrying
+[ 2438.1s] s-003-R-3: high-noise steps done in 210.2s on GPU 0
+[ 2704.5s] s-004-L-2: high-noise steps done in 266.2s on GPU 0
+[ 2715.3s] s-004-L-1: high-noise steps done in 331.1s on GPU 1
+[ 2778.1s] s-004-L-4: high-noise phase failed: [Errno 104] Connection reset by peer
+[ 2778.4s] s-004-R-1: ComfyUI 0 went down during the high-noise steps (<urlopen error [Errno 111] Connection refused>); restarting it and retrying
+[ 2778.4s] s-004-L-3: high-noise phase failed: [Errno 104] Connection reset by peer
+[ 2778.6s] s-004-L-6: high-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 2778.6s] ComfyUI 1: free failed (<urlopen error [Errno 111] Connection refused>); restarting it
+[ 3133.8s] s-004-R-1: high-noise steps done in 355.4s on GPU 0
+[ 3473.2s] s-002-R-1: done, low-noise + decode 694.5s
+[ 3894.9s] s-002-L-5: done, low-noise + decode 761.1s
+[ 3924.9s] s-002-R-3: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-002-R-5: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-003-L-1: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-003-L-3: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-003-R-1: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-003-R-3: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-004-L-2: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.0s] s-004-R-1: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.8s] s-002-R-4: low-noise phase failed: ComfyUI 1 died (out of memory?)
+[ 3925.8s] s-002-R-6: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.8s] s-003-L-2: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.8s] s-003-L-4: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.8s] s-003-R-2: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.8s] s-004-L-1: low-noise phase failed: <urlopen error [Errno 111] Connection refused>
+[ 3925.8s] finished: 2/19 clip(s) in 3926s
