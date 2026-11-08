@@ -1,0 +1,26 @@
+name: url-fetch
+# Downloads one generated file (e.g. an HF Space result URL) into the repo at the given path.
+on:
+  workflow_dispatch:
+    inputs:
+      url: {description: "https URL of the file", required: true}
+      path: {description: "repo path to save it at, e.g. hf/2026-11-09/s-003-L-5.mp4", required: true}
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        env: {URL: "${{ inputs.url }}", DEST: "${{ inputs.path }}"}
+        run: |
+          case "$URL" in https://*.hf.space/*|https://huggingface.co/*) ;; *) echo "only hf.space / huggingface.co URLs"; exit 1;; esac
+          case "$DEST" in hf/*) ;; *) echo "path must be under hf/"; exit 1;; esac
+          mkdir -p "$(dirname "$DEST")"; curl -fsSL --max-filesize 100000000 -o "$DEST" "$URL"; ls -l "$DEST"
+      - name: Commit
+        run: |
+          git config user.name "menga-actions"; git config user.email "actions@users.noreply.github.com"
+          git add -A hf; git commit -qm "url-fetch ${{ inputs.path }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done; exit 1

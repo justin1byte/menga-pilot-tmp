@@ -1,0 +1,42 @@
+name: kaggle-fetch
+# Records the kernel's status in kaggle/<run>/status.txt; when it is COMPLETE or ERROR,
+# downloads its output into kaggle/<run>/output and commits both.
+on:
+  workflow_dispatch:
+    inputs:
+      run: {description: "run name", required: true}
+      kernel: {description: "kernel", required: false, default: "naichiangpai/menga-wan22"}
+permissions:
+  contents: write
+concurrency: {group: kaggle, cancel-in-progress: false}
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install --quiet kaggle==2.2.5 six
+      - name: Kaggle credentials (from the repo secret; never printed)
+        env: {KAGGLE_API_TOKEN: "${{ secrets.KAGGLE_API_TOKEN }}"}
+        run: |
+          test -n "$KAGGLE_API_TOKEN" || { echo "secret KAGGLE_API_TOKEN is missing"; exit 1; }
+          mkdir -p ~/.kaggle && printf '%s' "$KAGGLE_API_TOKEN" > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
+      - name: Status and output
+        env: {KAGGLE_API_TOKEN: "${{ secrets.KAGGLE_API_TOKEN }}"}
+        run: |
+          d="kaggle/${{ inputs.run }}"; mkdir -p "$d"
+          kaggle kernels status "${{ inputs.kernel }}" 2>&1 | tail -1 | tee "$d/status.txt"
+          if grep -qE 'COMPLETE|ERROR' "$d/status.txt"; then
+            rm -rf "$d/output"; mkdir -p "$d/output"
+            kaggle kernels output "${{ inputs.kernel }}" -p "$d/output" 2>&1 | tail -3
+            find "$d/output" -type f -size +90M -print -delete
+          fi
+          date -u +%FT%TZ >> "$d/status.txt"
+      - name: Commit
+        run: |
+          git config user.name "menga-actions"; git config user.email "actions@users.noreply.github.com"
+          git add -A kaggle
+          git commit -qm "kaggle-fetch ${{ inputs.run }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done; exit 1
