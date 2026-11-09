@@ -1,0 +1,130 @@
+[{"stream_name":"stdout","time":0.76291046,"data":"[    0.0s] menga kernel v5: 25 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-e30b481a-dbd3-632c-5318-ffbe92f40bec)', 'GPU 1: Tesla T4 (UUID: GPU-b9bfd5d2-bfe0-275b-3b7a-bce74a2d9044)']; python 3.13.16\n"}
+,{"stream_name":"stdout","time":7.126908126,"data":"[    6.4s] torch 2.11.0+cu130, CUDA 13.0\n"}
+,{"stream_name":"stdout","time":7.127612646,"data":"[    6.4s] work dir /kaggle/tmp: 1038 GB free\n"}
+,{"stream_name":"stderr","time":12.264804728,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":14.727156852,"data":"[   14.0s] model edit_vae: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/vae/qwen_image_vae.safetensors 0.3 GB in 3s\n"}
+,{"stream_name":"stdout","time":71.279818036,"data":"[   70.6s] model edit_text: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors 9.4 GB in 59s\n"}
+,{"stream_name":"stdout","time":106.403894073,"data":"[  105.7s] model edit: QuantStack/Qwen-Image-Edit-2509-GGUF@84a3006/Qwen-Image-Edit-2509-Q4_K_M.gguf 13.1 GB in 95s\n"}
+,{"stream_name":"stdout","time":122.721610716,"data":"[  122.0s] ComfyUI and image-edit models ready in 116s\n"}
+,{"stream_name":"stdout","time":3243.696045852,"data":"[ 3243.0s] s-002-R-1--s-002-R-2_mid: intermediate keyframe done in 3089s\n"}
+,{"stream_name":"stdout","time":6290.474404102,"data":"[ 6289.8s] s-003-L-1--s-003-L-2_mid: intermediate keyframe done in 3047s\n"}
+,{"stream_name":"stdout","time":9329.26470245,"data":"[ 9328.5s] s-005-R-2--s-005-R-3_mid: intermediate keyframe done in 3039s\n"}
+,{"stream_name":"stdout","time":12354.1160805,"data":"[12353.4s] s-008-L-4--s-008-L-5_mid: intermediate keyframe done in 3025s\n"}
+,{"stream_name":"stdout","time":12366.451110994,"data":"[12365.7s] model vae: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/vae/wan_2.1_vae.safetensors 0.3 GB in 8s\n"}
+,{"stream_name":"stdout","time":12367.928605627,"data":"[12367.2s] model lora: Kijai/WanVideo_comfy@8260d42/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors 1.5 GB in 10s\n"}
+,{"stream_name":"stdout","time":12430.874507439,"data":"[12430.2s] model text: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors 6.7 GB in 73s\n"}
+,{"stream_name":"stdout","time":12465.717178135,"data":"[12465.0s] model high: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf 9.7 GB in 108s\n"}
+,{"stream_name":"stdout","time":12480.965070702,"data":"[12480.2s] model low: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf 9.7 GB in 123s\n"}
+,{"stream_name":"stdout","time":12480.966986654,"data":"[12480.2s] ComfyUI and models ready in 12474s; host RAM 30.8 GB free\n"}
+,{"stream_name":"stdout","time":12500.983883812,"data":"[12500.3s] setup done in 12500s; 2 worker(s); steps that cannot end by 6.44842 h are not started\n"}
+,{"stream_name":"stdout","time":12501.156178035,"data":"[12500.4s] s-003-L-3: high-noise steps on GPU 0 (host RAM 29.5 GB free)\n"}
+,{"stream_name":"stdout","time":12501.188428295,"data":"[12500.5s] s-003-R-3: high-noise steps on GPU 1 (host RAM 29.4 GB free)\n"}
+,{"stream_name":"stdout","time":12765.469425707,"data":"[12764.8s] s-003-L-3: high-noise steps done in 264.5s on GPU 0\n"}
+,{"stream_name":"stdout","time":12765.604705758,"data":"[12764.9s] s-004-L-1: high-noise steps on GPU 0 (host RAM 13.7 GB free)\n"}
+,{"stream_name":"stdout","time":12847.54969045,"data":"[12846.8s] s-003-R-3: high-noise steps done in 346.6s on GPU 1\n"}
+,{"stream_name":"stdout","time":12847.805674534,"data":"[12847.1s] s-004-R-3: high-noise steps on GPU 1 (host RAM 9.9 GB free)\n"}
+,{"stream_name":"stdout","time":12974.005904828,"data":"[12973.3s] s-004-L-1: high-noise steps done in 208.5s on GPU 0\n"}
+,{"stream_name":"stdout","time":12974.184706912,"data":"[12973.5s] s-006-R-1: high-noise steps on GPU 0 (host RAM 6.4 GB free)\n"}
+,{"stream_name":"stdout","time":13070.02897015,"data":"[13069.3s] s-004-R-3: high-noise steps done in 222.5s on GPU 1\n"}
+,{"stream_name":"stdout","time":13070.296784218,"data":"[13069.6s] s-006-R-2: high-noise steps on GPU 1 (host RAM 4.4 GB free)\n"}
+,{"stream_name":"stdout","time":13101.09185431,"data":"[13100.4s] s-006-R-2: high-noise steps lost on GPU 1 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":13101.09745252,"data":"[13100.4s] s-006-R-1: high-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":13128.380601644,"data":"[13127.7s] s-006-R-1: high-noise steps on GPU 0 (host RAM 29.7 GB free)\n"}
+,{"stream_name":"stdout","time":13130.203773585,"data":"[13129.5s] s-006-R-2: high-noise steps on GPU 1 (host RAM 29.1 GB free)\n"}
+,{"stream_name":"stdout","time":13596.890380938,"data":"[13596.2s] s-006-R-1: high-noise steps done in 468.5s on GPU 0\n"}
+,{"stream_name":"stdout","time":13597.077868863,"data":"[13596.4s] s-006-R-3: high-noise steps on GPU 0 (host RAM 11.7 GB free)\n"}
+,{"stream_name":"stdout","time":13627.167013336,"data":"[13626.4s] s-006-R-2: high-noise steps done in 497.0s on GPU 1\n"}
+,{"stream_name":"stdout","time":13627.322892388,"data":"[13626.6s] s-006-R-5: high-noise steps on GPU 1 (host RAM 7.7 GB free)\n"}
+,{"stream_name":"stdout","time":13865.49849648,"data":"[13864.8s] s-006-R-5: high-noise steps done in 238.3s on GPU 1\n"}
+,{"stream_name":"stdout","time":13865.672069312,"data":"[13865.0s] s-007-L-5: high-noise steps on GPU 1 (host RAM 6.4 GB free)\n"}
+,{"stream_name":"stdout","time":13900.305908368,"data":"[13899.6s] s-007-L-5: high-noise steps lost on GPU 1 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":13927.803151403,"data":"[13927.1s] s-007-L-5: high-noise steps on GPU 1 (host RAM 18.0 GB free)\n"}
+,{"stream_name":"stdout","time":14005.542118161,"data":"[14004.8s] s-006-R-3: high-noise steps done in 408.7s on GPU 0\n"}
+,{"stream_name":"stdout","time":14005.728861912,"data":"[14005.0s] s-007-R-2: high-noise steps on GPU 0 (host RAM 10.3 GB free)\n"}
+,{"stream_name":"stdout","time":14284.20929577,"data":"[14283.5s] s-007-R-2: high-noise steps done in 278.7s on GPU 0\n"}
+,{"stream_name":"stdout","time":14284.371301199,"data":"[14283.7s] s-008-L-3: high-noise steps on GPU 0 (host RAM 5.7 GB free)\n"}
+,{"stream_name":"stdout","time":14460.379777997,"data":"[14459.7s] s-007-L-5: high-noise steps done in 532.6s on GPU 1\n"}
+,{"stream_name":"stdout","time":14460.564352072,"data":"[14459.8s] s-008-R-5: high-noise steps on GPU 1 (host RAM 4.0 GB free)\n"}
+,{"stream_name":"stdout","time":14490.605483299,"data":"[14489.9s] s-008-L-3: high-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":14490.722588455,"data":"[14490.0s] s-008-R-5: high-noise steps lost on GPU 1 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":14519.013245229,"data":"[14518.3s] s-008-R-5: high-noise steps on GPU 0 (host RAM 29.6 GB free)\n"}
+,{"stream_name":"stdout","time":14519.302989633,"data":"[14518.6s] s-008-L-3: high-noise steps on GPU 1 (host RAM 29.6 GB free)\n"}
+,{"stream_name":"stdout","time":14845.366237034,"data":"[14844.6s] s-008-R-5: high-noise steps done in 326.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":14845.551615577,"data":"[14844.8s] s-009-L-1: high-noise steps on GPU 0 (host RAM 13.8 GB free)\n"}
+,{"stream_name":"stdout","time":14951.46967623,"data":"[14950.8s] s-008-L-3: high-noise steps done in 432.2s on GPU 1\n"}
+,{"stream_name":"stdout","time":14951.765898798,"data":"[14951.0s] s-009-R-1--s-009-R-2_1: high-noise steps on GPU 1 (host RAM 10.1 GB free)\n"}
+,{"stream_name":"stdout","time":15105.801799824,"data":"[15105.1s] s-009-L-1: high-noise steps done in 260.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":15106.013100809,"data":"[15105.3s] s-009-R-1--s-009-R-2_2: high-noise steps on GPU 0 (host RAM 6.4 GB free)\n"}
+,{"stream_name":"stdout","time":15234.022931797,"data":"[15233.3s] s-009-R-1--s-009-R-2_1: high-noise steps done in 282.6s on GPU 1\n"}
+,{"stream_name":"stdout","time":15234.221877796,"data":"[15233.5s] s-010-L-1: high-noise steps on GPU 1 (host RAM 4.4 GB free)\n"}
+,{"stream_name":"stdout","time":15360.243441426,"data":"[15359.5s] s-009-R-1--s-009-R-2_2: high-noise steps done in 254.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":15360.417185196,"data":"[15359.7s] s-010-L-2: high-noise steps on GPU 0 (host RAM 2.5 GB free)\n"}
+,{"stream_name":"stdout","time":15526.498461239,"data":"[15525.8s] s-010-L-1: high-noise steps done in 292.5s on GPU 1\n"}
+,{"stream_name":"stdout","time":15526.742740492,"data":"[15526.0s] s-010-L-3: high-noise steps on GPU 1 (host RAM 1.4 GB free)\n"}
+,{"stream_name":"stdout","time":15554.73507845,"data":"[15554.0s] s-010-L-2: high-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":15556.802733162,"data":"[15556.1s] s-010-L-3: high-noise steps lost on GPU 1 (ComfyUI 1 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 30.9 GB free now, lowest seen 1.4 GB)); will try again\n"}
+,{"stream_name":"stdout","time":15582.023557315,"data":"[15581.3s] s-010-L-3: high-noise steps on GPU 0 (host RAM 29.7 GB free)\n"}
+,{"stream_name":"stdout","time":15582.81587434,"data":"[15582.1s] s-010-L-2: high-noise steps on GPU 1 (host RAM 29.3 GB free)\n"}
+,{"stream_name":"stdout","time":15948.450444713,"data":"[15947.7s] s-010-L-2: high-noise steps done in 365.6s on GPU 1\n"}
+,{"stream_name":"stdout","time":15948.452315589,"data":"[15947.7s] s-010-R-2--s-010-R-3: not started: the run's 6.44842 h would end before it finished\n"}
+,{"stream_name":"stdout","time":15948.452493067,"data":"[15947.7s] s-010-R-4: not started: the run's 6.44842 h would end before it finished\n"}
+,{"stream_name":"stdout","time":15948.452689562,"data":"[15947.7s] s-011-L-4--s-011-L-5: not started: the run's 6.44842 h would end before it finished\n"}
+,{"stream_name":"stdout","time":15956.455737503,"data":"[15955.7s] s-003-L-3: low-noise steps on GPU 1 (host RAM 13.2 GB free)\n"}
+,{"stream_name":"stdout","time":15956.461127157,"data":"[15955.7s] s-010-L-3: high-noise steps done in 374.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":15964.463483897,"data":"[15963.7s] s-003-R-3: low-noise steps on GPU 0 (host RAM 11.5 GB free)\n"}
+,{"stream_name":"stdout","time":16461.535356502,"data":"[16460.8s] s-003-L-3: done, low-noise + decode 505.1s on GPU 1\n"}
+,{"stream_name":"stdout","time":16461.540149189,"data":"[16460.8s] s-004-L-1: low-noise steps on GPU 1 (host RAM 8.3 GB free)\n"}
+,{"stream_name":"stdout","time":16472.892718111,"data":"[16472.2s] s-003-R-3: done, low-noise + decode 508.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":16472.895417231,"data":"[16472.2s] s-004-R-3: low-noise steps on GPU 0 (host RAM 16.5 GB free)\n"}
+,{"stream_name":"stdout","time":16974.127484526,"data":"[16973.4s] s-004-R-3: done, low-noise + decode 501.2s on GPU 0\n"}
+,{"stream_name":"stdout","time":16974.128927007,"data":"[16973.4s] s-006-R-1: low-noise steps on GPU 0 (host RAM 4.8 GB free)\n"}
+,{"stream_name":"stdout","time":16997.338908154,"data":"[16996.6s] s-004-L-1: done, low-noise + decode 535.8s on GPU 1\n"}
+,{"stream_name":"stdout","time":16997.339673023,"data":"[16996.6s] s-006-R-2: low-noise steps on GPU 1 (host RAM 5.8 GB free)\n"}
+,{"stream_name":"stdout","time":17058.254101637,"data":"[17057.5s] s-006-R-1: low-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":17085.263710804,"data":"[17084.5s] s-006-R-1: low-noise steps on GPU 0 (host RAM 15.0 GB free)\n"}
+,{"stream_name":"stdout","time":17847.126392751,"data":"[17846.4s] s-006-R-2: done, low-noise + decode 849.8s on GPU 1\n"}
+,{"stream_name":"stdout","time":17847.12811899,"data":"[17846.4s] s-006-R-5: low-noise steps on GPU 1 (host RAM 5.6 GB free)\n"}
+,{"stream_name":"stdout","time":17928.385698467,"data":"[17927.7s] s-006-R-1: done, low-noise + decode 843.1s on GPU 0\n"}
+,{"stream_name":"stdout","time":17928.387228116,"data":"[17927.7s] s-006-R-3: low-noise steps on GPU 0 (host RAM 1.5 GB free)\n"}
+,{"stream_name":"stdout","time":17957.856649067,"data":"[17957.1s] s-006-R-5: low-noise steps lost on GPU 1 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":17958.284019607,"data":"[17957.6s] s-006-R-3: low-noise steps lost on GPU 0 ([Errno 104] Connection reset by peer); will try again\n"}
+,{"stream_name":"stdout","time":17985.304341395,"data":"[17984.6s] s-006-R-3: low-noise steps on GPU 1 (host RAM 29.7 GB free)\n"}
+,{"stream_name":"stdout","time":17985.608857759,"data":"[17984.9s] s-006-R-5: low-noise steps on GPU 0 (host RAM 29.6 GB free)\n"}
+,{"stream_name":"stdout","time":18543.898015598,"data":"[18543.2s] s-006-R-5: done, low-noise + decode 558.3s on GPU 0\n"}
+,{"stream_name":"stdout","time":18543.901843747,"data":"[18543.2s] s-007-R-2: low-noise steps on GPU 0 (host RAM 11.5 GB free)\n"}
+,{"stream_name":"stdout","time":19055.257221415,"data":"[19054.5s] s-007-R-2: done, low-noise + decode 511.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":19055.261501342,"data":"[19054.5s] s-007-L-5: low-noise steps on GPU 0 (host RAM 5.0 GB free)\n"}
+,{"stream_name":"stdout","time":19055.795243475,"data":"[19055.1s] s-006-R-3: done, low-noise + decode 1070.5s on GPU 1\n"}
+,{"stream_name":"stdout","time":19055.79613074,"data":"[19055.1s] s-008-R-5: low-noise steps on GPU 1 (host RAM 5.2 GB free)\n"}
+,{"stream_name":"stdout","time":19087.931299253,"data":"[19087.2s] s-007-L-5: low-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":19115.688278569,"data":"[19115.0s] s-007-L-5: low-noise steps on GPU 0 (host RAM 15.1 GB free)\n"}
+,{"stream_name":"stdout","time":19708.670292706,"data":"[19708.0s] s-008-R-5: done, low-noise + decode 652.9s on GPU 1\n"}
+,{"stream_name":"stdout","time":19708.674755817,"data":"[19708.0s] s-008-L-3: low-noise steps on GPU 1 (host RAM 7.9 GB free)\n"}
+,{"stream_name":"stdout","time":19975.43573808,"data":"[19974.7s] s-008-L-3: low-noise steps lost on GPU 1 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":19985.573817625,"data":"[19984.9s] s-007-L-5: done, low-noise + decode 869.9s on GPU 0\n"}
+,{"stream_name":"stdout","time":19985.574830999,"data":"[19984.9s] s-008-L-3: low-noise steps on GPU 0 (host RAM 15.1 GB free)\n"}
+,{"stream_name":"stdout","time":20003.212395517,"data":"[20002.5s] s-009-L-1: low-noise steps on GPU 1 (host RAM 20.6 GB free)\n"}
+,{"stream_name":"stdout","time":20504.14151774,"data":"[20503.4s] s-008-L-3: done, low-noise + decode 518.6s on GPU 0\n"}
+,{"stream_name":"stdout","time":20504.142898525,"data":"[20503.4s] s-009-R-1--s-009-R-2_1: low-noise steps on GPU 0 (host RAM 9.4 GB free)\n"}
+,{"stream_name":"stdout","time":20624.638170491,"data":"[20623.9s] s-009-L-1: done, low-noise + decode 621.4s on GPU 1\n"}
+,{"stream_name":"stdout","time":20624.63978633,"data":"[20623.9s] s-009-R-1--s-009-R-2_2: low-noise steps on GPU 1 (host RAM 4.1 GB free)\n"}
+,{"stream_name":"stdout","time":20650.320110815,"data":"[20649.6s] s-009-R-1--s-009-R-2_1: low-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":20677.986671403,"data":"[20677.3s] s-009-R-1--s-009-R-2_1: low-noise steps on GPU 0 (host RAM 17.5 GB free)\n"}
+,{"stream_name":"stdout","time":20936.481164279,"data":"[20935.8s] s-009-R-1--s-009-R-2_2: done, low-noise + decode 311.8s on GPU 1\n"}
+,{"stream_name":"stdout","time":20936.482934547,"data":"[20935.8s] s-010-L-1: low-noise steps on GPU 1 (host RAM 9.7 GB free)\n"}
+,{"stream_name":"stdout","time":21001.401189217,"data":"[21000.7s] s-009-R-1--s-009-R-2_1: done, low-noise + decode 323.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":21001.40220481,"data":"[21000.7s] s-010-L-2: low-noise steps on GPU 0 (host RAM 6.7 GB free)\n"}
+,{"stream_name":"stdout","time":21415.458026279,"data":"[21414.7s] s-010-L-2: done, low-noise + decode 414.1s on GPU 0\n"}
+,{"stream_name":"stdout","time":21415.459632161,"data":"[21414.7s] s-010-L-3: low-noise steps on GPU 0 (host RAM 3.4 GB free)\n"}
+,{"stream_name":"stdout","time":21465.82892096,"data":"[21465.1s] s-010-L-3: low-noise steps lost on GPU 0 (\u003curlopen error [Errno 111] Connection refused\u003e); will try again\n"}
+,{"stream_name":"stdout","time":21493.229444309,"data":"[21492.5s] s-010-L-3: low-noise steps on GPU 0 (host RAM 15.6 GB free)\n"}
+,{"stream_name":"stdout","time":21524.64781438,"data":"[21523.9s] s-010-L-1: done, low-noise + decode 588.2s on GPU 1\n"}
+,{"stream_name":"stdout","time":22155.651192444,"data":"[22154.9s] s-010-L-3: done, low-noise + decode 662.4s on GPU 0\n"}
+,{"stream_name":"stdout","time":22157.037072657,"data":"[22156.3s] finished: 22/25 clip(s) in 22156s\n"}
+,{"stream_name":"stderr","time":22161.301159112,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":22161.301190375,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":22161.557489611,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":22161.557515947,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":22162.46598137,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":22163.561038298,"data":"[NbConvertApp] Writing 600542 bytes to __results__.html\n"}
+]

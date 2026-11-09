@@ -1,0 +1,122 @@
+[    0.0s] menga kernel v5: 25 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-e30b481a-dbd3-632c-5318-ffbe92f40bec)', 'GPU 1: Tesla T4 (UUID: GPU-b9bfd5d2-bfe0-275b-3b7a-bce74a2d9044)']; python 3.13.16
+[    6.4s] torch 2.11.0+cu130, CUDA 13.0
+[    6.4s] work dir /kaggle/tmp: 1038 GB free
+[   14.0s] model edit_vae: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/vae/qwen_image_vae.safetensors 0.3 GB in 3s
+[   70.6s] model edit_text: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors 9.4 GB in 59s
+[  105.7s] model edit: QuantStack/Qwen-Image-Edit-2509-GGUF@84a3006/Qwen-Image-Edit-2509-Q4_K_M.gguf 13.1 GB in 95s
+[  122.0s] ComfyUI and image-edit models ready in 116s
+[ 3243.0s] s-002-R-1--s-002-R-2_mid: intermediate keyframe done in 3089s
+[ 6289.8s] s-003-L-1--s-003-L-2_mid: intermediate keyframe done in 3047s
+[ 9328.5s] s-005-R-2--s-005-R-3_mid: intermediate keyframe done in 3039s
+[12353.4s] s-008-L-4--s-008-L-5_mid: intermediate keyframe done in 3025s
+[12365.7s] model vae: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/vae/wan_2.1_vae.safetensors 0.3 GB in 8s
+[12367.2s] model lora: Kijai/WanVideo_comfy@8260d42/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors 1.5 GB in 10s
+[12430.2s] model text: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors 6.7 GB in 73s
+[12465.0s] model high: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf 9.7 GB in 108s
+[12480.2s] model low: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf 9.7 GB in 123s
+[12480.2s] ComfyUI and models ready in 12474s; host RAM 30.8 GB free
+[12500.3s] setup done in 12500s; 2 worker(s); steps that cannot end by 6.44842 h are not started
+[12500.4s] s-003-L-3: high-noise steps on GPU 0 (host RAM 29.5 GB free)
+[12500.5s] s-003-R-3: high-noise steps on GPU 1 (host RAM 29.4 GB free)
+[12764.8s] s-003-L-3: high-noise steps done in 264.5s on GPU 0
+[12764.9s] s-004-L-1: high-noise steps on GPU 0 (host RAM 13.7 GB free)
+[12846.8s] s-003-R-3: high-noise steps done in 346.6s on GPU 1
+[12847.1s] s-004-R-3: high-noise steps on GPU 1 (host RAM 9.9 GB free)
+[12973.3s] s-004-L-1: high-noise steps done in 208.5s on GPU 0
+[12973.5s] s-006-R-1: high-noise steps on GPU 0 (host RAM 6.4 GB free)
+[13069.3s] s-004-R-3: high-noise steps done in 222.5s on GPU 1
+[13069.6s] s-006-R-2: high-noise steps on GPU 1 (host RAM 4.4 GB free)
+[13100.4s] s-006-R-2: high-noise steps lost on GPU 1 (<urlopen error [Errno 111] Connection refused>); will try again
+[13100.4s] s-006-R-1: high-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[13127.7s] s-006-R-1: high-noise steps on GPU 0 (host RAM 29.7 GB free)
+[13129.5s] s-006-R-2: high-noise steps on GPU 1 (host RAM 29.1 GB free)
+[13596.2s] s-006-R-1: high-noise steps done in 468.5s on GPU 0
+[13596.4s] s-006-R-3: high-noise steps on GPU 0 (host RAM 11.7 GB free)
+[13626.4s] s-006-R-2: high-noise steps done in 497.0s on GPU 1
+[13626.6s] s-006-R-5: high-noise steps on GPU 1 (host RAM 7.7 GB free)
+[13864.8s] s-006-R-5: high-noise steps done in 238.3s on GPU 1
+[13865.0s] s-007-L-5: high-noise steps on GPU 1 (host RAM 6.4 GB free)
+[13899.6s] s-007-L-5: high-noise steps lost on GPU 1 (<urlopen error [Errno 111] Connection refused>); will try again
+[13927.1s] s-007-L-5: high-noise steps on GPU 1 (host RAM 18.0 GB free)
+[14004.8s] s-006-R-3: high-noise steps done in 408.7s on GPU 0
+[14005.0s] s-007-R-2: high-noise steps on GPU 0 (host RAM 10.3 GB free)
+[14283.5s] s-007-R-2: high-noise steps done in 278.7s on GPU 0
+[14283.7s] s-008-L-3: high-noise steps on GPU 0 (host RAM 5.7 GB free)
+[14459.7s] s-007-L-5: high-noise steps done in 532.6s on GPU 1
+[14459.8s] s-008-R-5: high-noise steps on GPU 1 (host RAM 4.0 GB free)
+[14489.9s] s-008-L-3: high-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[14490.0s] s-008-R-5: high-noise steps lost on GPU 1 (<urlopen error [Errno 111] Connection refused>); will try again
+[14518.3s] s-008-R-5: high-noise steps on GPU 0 (host RAM 29.6 GB free)
+[14518.6s] s-008-L-3: high-noise steps on GPU 1 (host RAM 29.6 GB free)
+[14844.6s] s-008-R-5: high-noise steps done in 326.4s on GPU 0
+[14844.8s] s-009-L-1: high-noise steps on GPU 0 (host RAM 13.8 GB free)
+[14950.8s] s-008-L-3: high-noise steps done in 432.2s on GPU 1
+[14951.0s] s-009-R-1--s-009-R-2_1: high-noise steps on GPU 1 (host RAM 10.1 GB free)
+[15105.1s] s-009-L-1: high-noise steps done in 260.4s on GPU 0
+[15105.3s] s-009-R-1--s-009-R-2_2: high-noise steps on GPU 0 (host RAM 6.4 GB free)
+[15233.3s] s-009-R-1--s-009-R-2_1: high-noise steps done in 282.6s on GPU 1
+[15233.5s] s-010-L-1: high-noise steps on GPU 1 (host RAM 4.4 GB free)
+[15359.5s] s-009-R-1--s-009-R-2_2: high-noise steps done in 254.4s on GPU 0
+[15359.7s] s-010-L-2: high-noise steps on GPU 0 (host RAM 2.5 GB free)
+[15525.8s] s-010-L-1: high-noise steps done in 292.5s on GPU 1
+[15526.0s] s-010-L-3: high-noise steps on GPU 1 (host RAM 1.4 GB free)
+[15554.0s] s-010-L-2: high-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[15556.1s] s-010-L-3: high-noise steps lost on GPU 1 (ComfyUI 1 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 30.9 GB free now, lowest seen 1.4 GB)); will try again
+[15581.3s] s-010-L-3: high-noise steps on GPU 0 (host RAM 29.7 GB free)
+[15582.1s] s-010-L-2: high-noise steps on GPU 1 (host RAM 29.3 GB free)
+[15947.7s] s-010-L-2: high-noise steps done in 365.6s on GPU 1
+[15947.7s] s-010-R-2--s-010-R-3: not started: the run's 6.44842 h would end before it finished
+[15947.7s] s-010-R-4: not started: the run's 6.44842 h would end before it finished
+[15947.7s] s-011-L-4--s-011-L-5: not started: the run's 6.44842 h would end before it finished
+[15955.7s] s-003-L-3: low-noise steps on GPU 1 (host RAM 13.2 GB free)
+[15955.7s] s-010-L-3: high-noise steps done in 374.4s on GPU 0
+[15963.7s] s-003-R-3: low-noise steps on GPU 0 (host RAM 11.5 GB free)
+[16460.8s] s-003-L-3: done, low-noise + decode 505.1s on GPU 1
+[16460.8s] s-004-L-1: low-noise steps on GPU 1 (host RAM 8.3 GB free)
+[16472.2s] s-003-R-3: done, low-noise + decode 508.4s on GPU 0
+[16472.2s] s-004-R-3: low-noise steps on GPU 0 (host RAM 16.5 GB free)
+[16973.4s] s-004-R-3: done, low-noise + decode 501.2s on GPU 0
+[16973.4s] s-006-R-1: low-noise steps on GPU 0 (host RAM 4.8 GB free)
+[16996.6s] s-004-L-1: done, low-noise + decode 535.8s on GPU 1
+[16996.6s] s-006-R-2: low-noise steps on GPU 1 (host RAM 5.8 GB free)
+[17057.5s] s-006-R-1: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[17084.5s] s-006-R-1: low-noise steps on GPU 0 (host RAM 15.0 GB free)
+[17846.4s] s-006-R-2: done, low-noise + decode 849.8s on GPU 1
+[17846.4s] s-006-R-5: low-noise steps on GPU 1 (host RAM 5.6 GB free)
+[17927.7s] s-006-R-1: done, low-noise + decode 843.1s on GPU 0
+[17927.7s] s-006-R-3: low-noise steps on GPU 0 (host RAM 1.5 GB free)
+[17957.1s] s-006-R-5: low-noise steps lost on GPU 1 (<urlopen error [Errno 111] Connection refused>); will try again
+[17957.6s] s-006-R-3: low-noise steps lost on GPU 0 ([Errno 104] Connection reset by peer); will try again
+[17984.6s] s-006-R-3: low-noise steps on GPU 1 (host RAM 29.7 GB free)
+[17984.9s] s-006-R-5: low-noise steps on GPU 0 (host RAM 29.6 GB free)
+[18543.2s] s-006-R-5: done, low-noise + decode 558.3s on GPU 0
+[18543.2s] s-007-R-2: low-noise steps on GPU 0 (host RAM 11.5 GB free)
+[19054.5s] s-007-R-2: done, low-noise + decode 511.4s on GPU 0
+[19054.5s] s-007-L-5: low-noise steps on GPU 0 (host RAM 5.0 GB free)
+[19055.1s] s-006-R-3: done, low-noise + decode 1070.5s on GPU 1
+[19055.1s] s-008-R-5: low-noise steps on GPU 1 (host RAM 5.2 GB free)
+[19087.2s] s-007-L-5: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[19115.0s] s-007-L-5: low-noise steps on GPU 0 (host RAM 15.1 GB free)
+[19708.0s] s-008-R-5: done, low-noise + decode 652.9s on GPU 1
+[19708.0s] s-008-L-3: low-noise steps on GPU 1 (host RAM 7.9 GB free)
+[19974.7s] s-008-L-3: low-noise steps lost on GPU 1 (<urlopen error [Errno 111] Connection refused>); will try again
+[19984.9s] s-007-L-5: done, low-noise + decode 869.9s on GPU 0
+[19984.9s] s-008-L-3: low-noise steps on GPU 0 (host RAM 15.1 GB free)
+[20002.5s] s-009-L-1: low-noise steps on GPU 1 (host RAM 20.6 GB free)
+[20503.4s] s-008-L-3: done, low-noise + decode 518.6s on GPU 0
+[20503.4s] s-009-R-1--s-009-R-2_1: low-noise steps on GPU 0 (host RAM 9.4 GB free)
+[20623.9s] s-009-L-1: done, low-noise + decode 621.4s on GPU 1
+[20623.9s] s-009-R-1--s-009-R-2_2: low-noise steps on GPU 1 (host RAM 4.1 GB free)
+[20649.6s] s-009-R-1--s-009-R-2_1: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[20677.3s] s-009-R-1--s-009-R-2_1: low-noise steps on GPU 0 (host RAM 17.5 GB free)
+[20935.8s] s-009-R-1--s-009-R-2_2: done, low-noise + decode 311.8s on GPU 1
+[20935.8s] s-010-L-1: low-noise steps on GPU 1 (host RAM 9.7 GB free)
+[21000.7s] s-009-R-1--s-009-R-2_1: done, low-noise + decode 323.4s on GPU 0
+[21000.7s] s-010-L-2: low-noise steps on GPU 0 (host RAM 6.7 GB free)
+[21414.7s] s-010-L-2: done, low-noise + decode 414.1s on GPU 0
+[21414.7s] s-010-L-3: low-noise steps on GPU 0 (host RAM 3.4 GB free)
+[21465.1s] s-010-L-3: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[21492.5s] s-010-L-3: low-noise steps on GPU 0 (host RAM 15.6 GB free)
+[21523.9s] s-010-L-1: done, low-noise + decode 588.2s on GPU 1
+[22154.9s] s-010-L-3: done, low-noise + decode 662.4s on GPU 0
+[22156.3s] finished: 22/25 clip(s) in 22156s
