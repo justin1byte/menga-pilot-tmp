@@ -1,0 +1,2080 @@
+{
+ "kernel_version": 5,
+ "export": {
+  "format": 1,
+  "project": "cell",
+  "run": "2026-11-09-c",
+  "backend": "kaggle",
+  "kernel": "naichiangpai/menga-wan22",
+  "exported_at": "2026-11-09T02:25:28+00:00",
+  "day": "2026-11-09",
+  "budget": 0.0,
+  "setup": 600.0,
+  "gpus": 2,
+  "hours": 11.530388888888888,
+  "batch_gpu_estimate": 52874.3
+ },
+ "started_at": "2026-11-09T02:26:18+00:00",
+ "comfyui": "ComfyUI v0.10.0",
+ "gguf_node": "ComfyUI-GGUF 6ea2651",
+ "model": "Wan 2.2 14B I2V A14B (GGUF Q4_K_M, lightx2v; Kaggle T4)",
+ "models": {
+  "high": "QuantStack/Wan2.2-I2V-A14B-GGUF@6c6717459277b9cd1f72579d78a0fd62a79e57dc/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf",
+  "low": "QuantStack/Wan2.2-I2V-A14B-GGUF@6c6717459277b9cd1f72579d78a0fd62a79e57dc/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf",
+  "text": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a40737a995bf5818954cfce6d59443b0f04/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+  "vae": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a40737a995bf5818954cfce6d59443b0f04/split_files/vae/wan_2.1_vae.safetensors",
+  "lora": "Kijai/WanVideo_comfy@8260d429d19fd7a72304cad059160b95d843913f/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors"
+ },
+ "lora_strength": {
+  "high": 3.0,
+  "low": 1.0
+ },
+ "profiles": {
+  "i2v": {
+   "sampler": "uni_pc_bh2",
+   "shift": 3.0
+  },
+  "first-last": {
+   "sampler": "euler",
+   "shift": 8.0
+  },
+  "anchored": {
+   "sampler": "euler",
+   "shift": 8.0
+  }
+ },
+ "gpus": [
+  "GPU 0: Tesla T4 (UUID: GPU-07acddab-65f9-f375-5694-198bce5bc28f)",
+  "GPU 1: Tesla T4 (UUID: GPU-780a7146-2a17-83e6-2299-08ecf9fc1034)"
+ ],
+ "jobs": [
+  {
+   "clip": "s-002-R-3--s-002-R-4",
+   "shot": "s-002-R-3--s-002-R-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-3-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-4.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "high_ram_min_gb": 13.661448,
+   "high_seconds": 344.8,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 2.0,
+   "low_ram_min_gb": 11.762836,
+   "low_seconds": 425.0,
+   "ok": true,
+   "file": "s-002-R-3--s-002-R-4.mp4",
+   "finished_at": "2026-11-09T05:35:18+00:00",
+   "seconds": 769.8
+  },
+  {
+   "clip": "s-002-R-4--s-002-R-5",
+   "shot": "s-002-R-4--s-002-R-5",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-4-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-5.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "high_ram_min_gb": 6.018272,
+   "high_seconds": 384.9,
+   "low_gpu": 1,
+   "low_ram_min_gb": 6.189516,
+   "low_seconds": 288.7,
+   "ok": true,
+   "file": "s-002-R-4--s-002-R-5.mp4",
+   "finished_at": "2026-11-09T05:40:07+00:00",
+   "seconds": 673.6
+  },
+  {
+   "clip": "s-002-R-5",
+   "shot": "s-002-R-5",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-002-R-5-first.png"
+   ],
+   "gpu": 0,
+   "width": 688,
+   "height": 832,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 3.436144,
+   "high_seconds": 328.5,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 322.4,
+   "low_ram_min_gb": 4.578532,
+   "low_seconds": 687.0,
+   "ok": true,
+   "file": "s-002-R-5.mp4",
+   "finished_at": "2026-11-09T05:57:33+00:00",
+   "seconds": 1015.5
+  },
+  {
+   "clip": "s-003-L-2",
+   "shot": "s-003-L-2",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-003-L-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 3.436144,
+   "high_seconds": 196.4,
+   "low_gpu": 0,
+   "low_ram_min_gb": 3.150728,
+   "low_seconds": 463.5,
+   "ok": true,
+   "file": "s-003-L-2.mp4",
+   "finished_at": "2026-11-09T05:45:25+00:00",
+   "seconds": 659.9
+  },
+  {
+   "clip": "s-003-L-3",
+   "shot": "s-003-L-3",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-003-L-3-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: ComfyUI 1 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 31.0 GB free now, lowest seen 1.2 GB)",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 128.4,
+   "high_ram_min_gb": 13.194052,
+   "high_seconds": 264.3,
+   "low_gpu": 0,
+   "low_ram_min_gb": 12.201156,
+   "low_seconds": 519.1,
+   "ok": true,
+   "file": "s-003-L-3.mp4",
+   "finished_at": "2026-11-09T05:54:45+00:00",
+   "seconds": 783.4
+  },
+  {
+   "clip": "s-003-L-4",
+   "shot": "s-003-L-4",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-003-L-4-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 704,
+   "frames": 49,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 30.3,
+   "high_ram_min_gb": 3.9394,
+   "high_seconds": 469.0,
+   "low_gpu": 0,
+   "low_ram_min_gb": 0.616628,
+   "low_seconds": 653.7,
+   "ok": true,
+   "file": "s-003-L-4.mp4",
+   "finished_at": "2026-11-09T06:05:39+00:00",
+   "seconds": 1122.7
+  },
+  {
+   "clip": "s-003-L-5",
+   "shot": "s-003-L-5",
+   "candidate": null,
+   "attempt": 3,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 44,
+   "steps": 6,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-003-L-5-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 784,
+   "frames": 41,
+   "switch_step": 2,
+   "high_ram_min_gb": 3.93928,
+   "high_seconds": 258.5,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 510.6,
+   "low_ram_min_gb": 0.584416,
+   "low_seconds": 587.3,
+   "ok": true,
+   "file": "s-003-L-5.mp4",
+   "finished_at": "2026-11-09T06:16:26+00:00",
+   "seconds": 845.8
+  },
+  {
+   "clip": "s-003-R-1--s-003-R-2",
+   "shot": "s-003-R-1--s-003-R-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-003-R-1-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-003-R-2.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "high_ram_min_gb": 2.602628,
+   "high_seconds": 262.7,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 218.3,
+   "low_ram_min_gb": 6.7085,
+   "low_seconds": 414.5,
+   "ok": true,
+   "file": "s-003-R-1--s-003-R-2.mp4",
+   "finished_at": "2026-11-09T06:24:21+00:00",
+   "seconds": 677.2
+  },
+  {
+   "clip": "s-003-R-3",
+   "shot": "s-003-R-3",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-003-R-3-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 2.715268,
+   "high_seconds": 194.4,
+   "low_gpu": 0,
+   "low_ram_min_gb": 0.42746,
+   "low_seconds": 451.3,
+   "ok": true,
+   "file": "s-003-R-3.mp4",
+   "finished_at": "2026-11-09T06:13:10+00:00",
+   "seconds": 645.7
+  },
+  {
+   "clip": "s-004-L-1",
+   "shot": "s-004-L-1",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-004-L-1-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 50.8,
+   "high_ram_min_gb": 5.12052,
+   "high_seconds": 260.3,
+   "low_gpu": 0,
+   "low_ram_min_gb": 3.037776,
+   "low_seconds": 435.7,
+   "ok": true,
+   "file": "s-004-L-1.mp4",
+   "finished_at": "2026-11-09T06:31:00+00:00",
+   "seconds": 696.0
+  },
+  {
+   "clip": "s-004-R-2--s-004-R-3",
+   "shot": "s-004-R-2--s-004-R-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-004-R-2-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-004-R-3.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "high_ram_min_gb": 0.44226,
+   "high_seconds": 303.0,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 22.6,
+   "low_ram_min_gb": 12.88718,
+   "low_seconds": 378.8,
+   "ok": true,
+   "file": "s-004-R-2--s-004-R-3.mp4",
+   "finished_at": "2026-11-09T06:23:45+00:00",
+   "seconds": 681.8
+  },
+  {
+   "clip": "s-004-R-3",
+   "shot": "s-004-R-3",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-004-R-3-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 152.6,
+   "high_ram_min_gb": 7.432596,
+   "high_seconds": 270.3,
+   "low_gpu": 1,
+   "low_ram_min_gb": 6.955068,
+   "low_seconds": 541.7,
+   "ok": true,
+   "file": "s-004-R-3.mp4",
+   "finished_at": "2026-11-09T06:42:12+00:00",
+   "seconds": 812.0
+  },
+  {
+   "clip": "s-005-R-1",
+   "shot": "s-005-R-1",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-005-R-1-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 544,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.516024,
+   "high_seconds": 243.2,
+   "low_gpu": 1,
+   "low_ram_min_gb": 2.486836,
+   "low_seconds": 468.5,
+   "ok": true,
+   "file": "s-005-R-1.mp4",
+   "finished_at": "2026-11-09T06:32:09+00:00",
+   "seconds": 711.7
+  },
+  {
+   "clip": "s-005-R-5",
+   "shot": "s-005-R-5",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-005-R-5-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.171488,
+   "high_seconds": 162.4,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 24.1,
+   "low_ram_min_gb": 12.754072,
+   "low_seconds": 455.1,
+   "ok": true,
+   "file": "s-005-R-5.mp4",
+   "finished_at": "2026-11-09T06:40:45+00:00",
+   "seconds": 617.5
+  },
+  {
+   "clip": "s-005-R-6",
+   "shot": "s-005-R-6",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-005-R-6-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.157852,
+   "high_seconds": 182.4,
+   "low_gpu": 0,
+   "low_ram_min_gb": 3.850436,
+   "low_seconds": 362.0,
+   "ok": true,
+   "file": "s-005-R-6.mp4",
+   "finished_at": "2026-11-09T06:46:47+00:00",
+   "seconds": 544.4
+  },
+  {
+   "clip": "s-006-L-1--s-006-L-2",
+   "shot": "s-006-L-1--s-006-L-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-006-L-1-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-006-L-2.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 212.7,
+   "high_ram_min_gb": 4.506116,
+   "high_seconds": 410.1,
+   "low_gpu": 1,
+   "low_ram_min_gb": 11.4858,
+   "low_seconds": 420.7,
+   "ok": true,
+   "file": "s-006-L-1--s-006-L-2.mp4",
+   "finished_at": "2026-11-09T06:55:24+00:00",
+   "seconds": 830.8
+  },
+  {
+   "clip": "s-006-L-3--s-006-L-4",
+   "shot": "s-006-L-3--s-006-L-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-006-L-3-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-006-L-4.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "retries": [
+    "high: ComfyUI 0 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 29.8 GB free now, lowest seen 0.3 GB)"
+   ],
+   "lost_seconds": 24.9,
+   "high_ram_min_gb": 13.760188,
+   "high_seconds": 308.3,
+   "low_gpu": 1,
+   "low_ram_min_gb": 3.254852,
+   "low_seconds": 258.0,
+   "ok": true,
+   "file": "s-006-L-3--s-006-L-4.mp4",
+   "finished_at": "2026-11-09T06:46:30+00:00",
+   "seconds": 566.3
+  },
+  {
+   "clip": "s-006-R-1",
+   "shot": "s-006-R-1",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-006-R-1-first.png"
+   ],
+   "gpu": 1,
+   "width": 800,
+   "height": 832,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.374672,
+   "high_seconds": 354.6,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 61.2,
+   "low_ram_min_gb": 0.575648,
+   "low_seconds": 1044.1,
+   "ok": true,
+   "file": "s-006-R-1.mp4",
+   "finished_at": "2026-11-09T07:05:47+00:00",
+   "seconds": 1398.7
+  },
+  {
+   "clip": "s-006-R-2",
+   "shot": "s-006-R-2",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-006-R-2-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 720,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.50068,
+   "high_seconds": 384.0,
+   "low_gpu": 1,
+   "low_ram_min_gb": 3.607556,
+   "low_seconds": 571.3,
+   "ok": true,
+   "file": "s-006-R-2.mp4",
+   "finished_at": "2026-11-09T07:04:55+00:00",
+   "seconds": 955.3
+  },
+  {
+   "clip": "s-006-R-3",
+   "shot": "s-006-R-3",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-006-R-3-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 784,
+   "frames": 49,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 67.5,
+   "high_ram_min_gb": 4.508668,
+   "high_seconds": 398.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 0.272556,
+   "low_seconds": 757.9,
+   "ok": true,
+   "file": "s-006-R-3.mp4",
+   "finished_at": "2026-11-09T07:18:37+00:00",
+   "seconds": 1156.3
+  },
+  {
+   "clip": "s-006-R-5",
+   "shot": "s-006-R-5",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-006-R-5-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 5.067184,
+   "high_seconds": 290.0,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 26.4,
+   "low_ram_min_gb": 8.089348,
+   "low_seconds": 459.0,
+   "ok": true,
+   "file": "s-006-R-5.mp4",
+   "finished_at": "2026-11-09T07:13:26+00:00",
+   "seconds": 749.0
+  },
+  {
+   "clip": "s-007-L-3",
+   "shot": "s-007-L-3",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 4.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-007-L-3-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 73,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 132.4,
+   "high_ram_min_gb": 4.979496,
+   "high_seconds": 360.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 5.202004,
+   "low_seconds": 558.3,
+   "ok": true,
+   "file": "s-007-L-3.mp4",
+   "finished_at": "2026-11-09T07:27:56+00:00",
+   "seconds": 918.7
+  },
+  {
+   "clip": "s-007-L-5",
+   "shot": "s-007-L-5",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-007-L-5-first.png"
+   ],
+   "gpu": 1,
+   "width": 816,
+   "height": 832,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.480336,
+   "high_seconds": 384.9,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 953.7,
+   "low_ram_min_gb": 4.631612,
+   "low_seconds": 1071.7,
+   "ok": true,
+   "file": "s-007-L-5.mp4",
+   "finished_at": "2026-11-09T07:48:24+00:00",
+   "seconds": 1456.6
+  },
+  {
+   "clip": "s-007-R-2",
+   "shot": "s-007-R-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-007-R-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.81002,
+   "high_seconds": 234.5,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 120.2,
+   "low_ram_min_gb": 11.253672,
+   "low_seconds": 547.7,
+   "ok": true,
+   "file": "s-007-R-2.mp4",
+   "finished_at": "2026-11-09T07:39:40+00:00",
+   "seconds": 782.2
+  },
+  {
+   "clip": "s-008-L-3",
+   "shot": "s-008-L-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-L-3-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.523944,
+   "high_seconds": 274.8,
+   "low_gpu": 1,
+   "low_ram_min_gb": 4.96338,
+   "low_seconds": 513.1,
+   "ok": true,
+   "file": "s-008-L-3.mp4",
+   "finished_at": "2026-11-09T07:48:13+00:00",
+   "seconds": 787.9
+  },
+  {
+   "clip": "s-008-L-5",
+   "shot": "s-008-L-5",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-L-5-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 26.4,
+   "high_ram_min_gb": 6.629192,
+   "high_seconds": 262.3,
+   "low_gpu": 1,
+   "low_ram_min_gb": 1.306212,
+   "low_seconds": 425.0,
+   "ok": true,
+   "file": "s-008-L-5.mp4",
+   "finished_at": "2026-11-09T07:55:18+00:00",
+   "seconds": 687.3
+  },
+  {
+   "clip": "s-008-R-1",
+   "shot": "s-008-R-1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-R-1-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.23614,
+   "high_seconds": 342.4,
+   "low_gpu": 0,
+   "low_ram_min_gb": 1.480168,
+   "low_seconds": 577.9,
+   "ok": true,
+   "file": "s-008-R-1.mp4",
+   "finished_at": "2026-11-09T07:58:02+00:00",
+   "seconds": 920.3
+  },
+  {
+   "clip": "s-008-R-2",
+   "shot": "s-008-R-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-R-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.167816,
+   "high_seconds": 200.4,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 168.2,
+   "low_ram_min_gb": 4.238688,
+   "low_seconds": 452.0,
+   "ok": true,
+   "file": "s-008-R-2.mp4",
+   "finished_at": "2026-11-09T08:06:15+00:00",
+   "seconds": 652.4
+  },
+  {
+   "clip": "s-008-R-3",
+   "shot": "s-008-R-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-R-3-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 576,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 110.5,
+   "high_ram_min_gb": 6.523332,
+   "high_seconds": 336.3,
+   "low_gpu": 1,
+   "low_ram_min_gb": 0.198132,
+   "low_seconds": 524.7,
+   "ok": true,
+   "file": "s-008-R-3.mp4",
+   "finished_at": "2026-11-09T08:15:00+00:00",
+   "seconds": 861.0
+  },
+  {
+   "clip": "s-008-R-4",
+   "shot": "s-008-R-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-R-4-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 656,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.82742,
+   "high_seconds": 314.5,
+   "low_gpu": 0,
+   "retries": [
+    "low: [Errno 104] Connection reset by peer"
+   ],
+   "lost_seconds": 532.0,
+   "low_ram_min_gb": 3.351004,
+   "low_seconds": 813.5,
+   "ok": true,
+   "file": "s-008-R-4.mp4",
+   "finished_at": "2026-11-09T08:21:05+00:00",
+   "seconds": 1128.0
+  },
+  {
+   "clip": "s-008-R-5",
+   "shot": "s-008-R-5",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-008-R-5-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: ComfyUI 0 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 29.1 GB free now, lowest seen 1.0 GB)"
+   ],
+   "lost_seconds": 151.6,
+   "high_ram_min_gb": 8.18914,
+   "high_seconds": 414.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 12.52484,
+   "low_seconds": 548.3,
+   "ok": true,
+   "file": "s-008-R-5.mp4",
+   "finished_at": "2026-11-09T08:31:22+00:00",
+   "seconds": 962.7
+  },
+  {
+   "clip": "s-009-L-1",
+   "shot": "s-009-L-1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-L-1-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 428.8,
+   "high_ram_min_gb": 13.762684,
+   "high_seconds": 304.3,
+   "low_gpu": 0,
+   "low_ram_min_gb": 7.38332,
+   "low_seconds": 686.9,
+   "ok": true,
+   "file": "s-009-L-1.mp4",
+   "finished_at": "2026-11-09T08:33:40+00:00",
+   "seconds": 991.2
+  },
+  {
+   "clip": "s-009-L-2",
+   "shot": "s-009-L-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-L-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 3.21616,
+   "high_seconds": 198.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 3.737652,
+   "low_seconds": 428.6,
+   "ok": true,
+   "file": "s-009-L-2.mp4",
+   "finished_at": "2026-11-09T08:38:30+00:00",
+   "seconds": 627.0
+  },
+  {
+   "clip": "s-009-L-3",
+   "shot": "s-009-L-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-L-3-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 496,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.405408,
+   "high_seconds": 226.7,
+   "low_gpu": 0,
+   "low_ram_min_gb": 0.97346,
+   "low_seconds": 455.3,
+   "ok": true,
+   "file": "s-009-L-3.mp4",
+   "finished_at": "2026-11-09T08:41:16+00:00",
+   "seconds": 682.0
+  },
+  {
+   "clip": "s-009-L-4",
+   "shot": "s-009-L-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-L-4-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 656,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.91618,
+   "high_seconds": 250.6,
+   "low_gpu": 1,
+   "low_ram_min_gb": 0.196576,
+   "low_seconds": 509.4,
+   "ok": true,
+   "file": "s-009-L-4.mp4",
+   "finished_at": "2026-11-09T08:47:00+00:00",
+   "seconds": 760.0
+  },
+  {
+   "clip": "s-009-R-1--s-009-R-2_1",
+   "shot": "s-009-R-1--s-009-R-2_1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-009-R-1.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-009-R-1--s-009-R-2_mid.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "high_ram_min_gb": 0.548788,
+   "high_seconds": 281.6,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 24.1,
+   "low_ram_min_gb": 4.474736,
+   "low_seconds": 330.0,
+   "ok": true,
+   "file": "s-009-R-1--s-009-R-2_1.mp4",
+   "finished_at": "2026-11-09T08:47:47+00:00",
+   "seconds": 611.6
+  },
+  {
+   "clip": "s-009-R-1--s-009-R-2_2",
+   "shot": "s-009-R-1--s-009-R-2_2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-009-R-1--s-009-R-2_mid.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-009-R-2.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 41,
+   "switch_step": 4,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 103.3,
+   "high_ram_min_gb": 5.647656,
+   "high_seconds": 304.3,
+   "low_gpu": 1,
+   "low_ram_min_gb": 9.127928,
+   "low_seconds": 322.6,
+   "ok": true,
+   "file": "s-009-R-1--s-009-R-2_2.mp4",
+   "finished_at": "2026-11-09T08:54:19+00:00",
+   "seconds": 626.9
+  },
+  {
+   "clip": "s-009-R-4",
+   "shot": "s-009-R-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-R-4-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 73,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 230.5,
+   "high_ram_min_gb": 4.54926,
+   "high_seconds": 374.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 0.275572,
+   "low_seconds": 552.1,
+   "ok": true,
+   "file": "s-009-R-4.mp4",
+   "finished_at": "2026-11-09T09:03:32+00:00",
+   "seconds": 926.5
+  },
+  {
+   "clip": "s-009-R-5",
+   "shot": "s-009-R-5",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-R-5-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.234928,
+   "high_seconds": 244.6,
+   "low_gpu": 0,
+   "low_ram_min_gb": 0.194,
+   "low_seconds": 599.2,
+   "ok": true,
+   "file": "s-009-R-5.mp4",
+   "finished_at": "2026-11-09T08:57:46+00:00",
+   "seconds": 843.8
+  },
+  {
+   "clip": "s-009-R-6",
+   "shot": "s-009-R-6",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-009-R-6-first.png"
+   ],
+   "gpu": 1,
+   "width": 656,
+   "height": 832,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.326016,
+   "high_seconds": 248.5,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 372.9,
+   "low_ram_min_gb": 6.778244,
+   "low_seconds": 676.3,
+   "ok": true,
+   "file": "s-009-R-6.mp4",
+   "finished_at": "2026-11-09T09:15:53+00:00",
+   "seconds": 924.8
+  },
+  {
+   "clip": "s-010-L-1",
+   "shot": "s-010-L-1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-L-1-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.804108,
+   "high_seconds": 266.5,
+   "low_gpu": 0,
+   "low_ram_min_gb": 3.577164,
+   "low_seconds": 527.0,
+   "ok": true,
+   "file": "s-010-L-1.mp4",
+   "finished_at": "2026-11-09T09:22:13+00:00",
+   "seconds": 793.5
+  },
+  {
+   "clip": "s-010-L-2",
+   "shot": "s-010-L-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-L-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 2.01984,
+   "high_seconds": 192.4,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 28.0,
+   "low_ram_min_gb": 12.477828,
+   "low_seconds": 529.6,
+   "ok": true,
+   "file": "s-010-L-2.mp4",
+   "finished_at": "2026-11-09T09:13:26+00:00",
+   "seconds": 722.0
+  },
+  {
+   "clip": "s-010-L-3",
+   "shot": "s-010-L-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-L-3-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 73,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 93.2,
+   "high_ram_min_gb": 9.875256,
+   "high_seconds": 344.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 2.806376,
+   "low_seconds": 549.0,
+   "ok": true,
+   "file": "s-010-L-3.mp4",
+   "finished_at": "2026-11-09T09:25:02+00:00",
+   "seconds": 893.4
+  },
+  {
+   "clip": "s-010-L-4",
+   "shot": "s-010-L-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-L-4-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 800,
+   "frames": 65,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 2038.5,
+   "high_ram_min_gb": 0.544696,
+   "high_seconds": 941.0,
+   "low_gpu": 0,
+   "ok": false,
+   "error": "gave up after 3 tries: <urlopen error [Errno 111] Connection refused>",
+   "error_kind": "server",
+   "finished_at": "2026-11-09T10:05:08+00:00"
+  },
+  {
+   "clip": "s-010-R-1",
+   "shot": "s-010-R-1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-R-1-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 4.693668,
+   "high_seconds": 238.5,
+   "low_gpu": 0,
+   "low_ram_min_gb": 0.622064,
+   "low_seconds": 569.3,
+   "ok": true,
+   "file": "s-010-R-1.mp4",
+   "finished_at": "2026-11-09T09:31:43+00:00",
+   "seconds": 807.8
+  },
+  {
+   "clip": "s-010-R-2",
+   "shot": "s-010-R-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-R-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 560,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 2.56928,
+   "high_seconds": 246.5,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 28.7,
+   "low_ram_min_gb": 3.133172,
+   "low_seconds": 551.2,
+   "ok": true,
+   "file": "s-010-R-2.mp4",
+   "finished_at": "2026-11-09T09:35:20+00:00",
+   "seconds": 797.7
+  },
+  {
+   "clip": "s-010-R-3",
+   "shot": "s-010-R-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-R-3-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 656,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 173.2,
+   "high_ram_min_gb": 9.848644,
+   "high_seconds": 376.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 6.933496,
+   "low_seconds": 701.5,
+   "ok": true,
+   "file": "s-010-R-3.mp4",
+   "finished_at": "2026-11-09T09:54:35+00:00",
+   "seconds": 1077.9
+  },
+  {
+   "clip": "s-010-R-4",
+   "shot": "s-010-R-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-R-4-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 544,
+   "frames": 49,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 27.5,
+   "high_ram_min_gb": 12.769668,
+   "high_seconds": 364.1,
+   "low_gpu": 1,
+   "low_ram_min_gb": 0.24376,
+   "low_seconds": 389.1,
+   "ok": true,
+   "file": "s-010-R-4.mp4",
+   "finished_at": "2026-11-09T09:41:49+00:00",
+   "seconds": 753.2
+  },
+  {
+   "clip": "s-010-R-5",
+   "shot": "s-010-R-5",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-R-5-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 624,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 4.318184,
+   "high_seconds": 276.5,
+   "low_gpu": 1,
+   "low_ram_min_gb": 3.190952,
+   "low_seconds": 468.9,
+   "ok": true,
+   "file": "s-010-R-5.mp4",
+   "finished_at": "2026-11-09T10:02:24+00:00",
+   "seconds": 745.4
+  },
+  {
+   "clip": "s-010-R-6",
+   "shot": "s-010-R-6",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-010-R-6-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 480,
+   "frames": 73,
+   "switch_step": 2,
+   "high_ram_min_gb": 2.686996,
+   "high_seconds": 300.6,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 164.2,
+   "low_ram_min_gb": 12.10248,
+   "low_seconds": 627.7,
+   "ok": true,
+   "file": "s-010-R-6.mp4",
+   "finished_at": "2026-11-09T10:16:12+00:00",
+   "seconds": 928.3
+  },
+  {
+   "clip": "s-011-L-1",
+   "shot": "s-011-L-1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-L-1-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 73,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.949572,
+   "high_seconds": 396.7,
+   "low_gpu": 0,
+   "low_ram_min_gb": 5.665132,
+   "low_seconds": 787.3,
+   "ok": true,
+   "file": "s-011-L-1.mp4",
+   "finished_at": "2026-11-09T10:18:52+00:00",
+   "seconds": 1184.0
+  },
+  {
+   "clip": "s-011-L-3",
+   "shot": "s-011-L-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-L-3-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 576,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 30.3,
+   "high_ram_min_gb": 5.105188,
+   "high_seconds": 320.7,
+   "low_gpu": 1,
+   "low_ram_min_gb": 3.969404,
+   "low_seconds": 510.7,
+   "ok": true,
+   "file": "s-011-L-3.mp4",
+   "finished_at": "2026-11-09T10:24:43+00:00",
+   "seconds": 831.4
+  },
+  {
+   "clip": "s-011-L-4",
+   "shot": "s-011-L-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-L-4-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 449.6,
+   "high_ram_min_gb": 10.046816,
+   "high_seconds": 266.3,
+   "low_gpu": 0,
+   "low_ram_min_gb": 11.472936,
+   "low_seconds": 533.4,
+   "ok": true,
+   "file": "s-011-L-4.mp4",
+   "finished_at": "2026-11-09T10:34:50+00:00",
+   "seconds": 799.7
+  },
+  {
+   "clip": "s-011-L-5",
+   "shot": "s-011-L-5",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-L-5-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 688,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.560304,
+   "high_seconds": 357.3,
+   "low_gpu": 1,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 34.1,
+   "low_ram_min_gb": 4.849312,
+   "low_seconds": 861.6,
+   "ok": true,
+   "file": "s-011-L-5.mp4",
+   "finished_at": "2026-11-09T10:40:18+00:00",
+   "seconds": 1218.9
+  },
+  {
+   "clip": "s-011-L-6",
+   "shot": "s-011-L-6",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-L-6-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 640,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.18916,
+   "high_seconds": 372.7,
+   "low_gpu": 1,
+   "low_ram_min_gb": 1.072204,
+   "low_seconds": 595.6,
+   "ok": true,
+   "file": "s-011-L-6.mp4",
+   "finished_at": "2026-11-09T10:50:14+00:00",
+   "seconds": 968.3
+  },
+  {
+   "clip": "s-011-R-1",
+   "shot": "s-011-R-1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-R-1-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 576,
+   "frames": 49,
+   "switch_step": 2,
+   "high_ram_min_gb": 2.876528,
+   "high_seconds": 226.8,
+   "low_gpu": 0,
+   "low_ram_min_gb": 1.775868,
+   "low_seconds": 458.2,
+   "ok": true,
+   "file": "s-011-R-1.mp4",
+   "finished_at": "2026-11-09T10:42:28+00:00",
+   "seconds": 685.0
+  },
+  {
+   "clip": "s-011-R-2",
+   "shot": "s-011-R-2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-R-2-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 560,
+   "frames": 57,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 154.4,
+   "high_ram_min_gb": 4.752744,
+   "high_seconds": 308.3,
+   "low_gpu": 1,
+   "low_ram_min_gb": 0.161496,
+   "low_seconds": 489.7,
+   "ok": true,
+   "file": "s-011-R-2.mp4",
+   "finished_at": "2026-11-09T10:58:24+00:00",
+   "seconds": 798.0
+  },
+  {
+   "clip": "s-011-R-3",
+   "shot": "s-011-R-3",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 3.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-R-3-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 544,
+   "frames": 57,
+   "switch_step": 2,
+   "high_ram_min_gb": 1.022232,
+   "high_seconds": 306.6,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 492.6,
+   "low_ram_min_gb": 2.483404,
+   "low_seconds": 574.6,
+   "ok": true,
+   "file": "s-011-R-3.mp4",
+   "finished_at": "2026-11-09T11:00:53+00:00",
+   "seconds": 881.2
+  },
+  {
+   "clip": "s-011-R-4",
+   "shot": "s-011-R-4",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-R-4-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 512,
+   "frames": 65,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>",
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 132.5,
+   "high_ram_min_gb": 6.363036,
+   "high_seconds": 346.4,
+   "low_gpu": 1,
+   "low_ram_min_gb": 11.477876,
+   "low_seconds": 577.5,
+   "ok": true,
+   "file": "s-011-R-4.mp4",
+   "finished_at": "2026-11-09T11:11:37+00:00",
+   "seconds": 923.9
+  },
+  {
+   "clip": "s-011-R-6",
+   "shot": "s-011-R-6",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 4.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-R-6-first.png"
+   ],
+   "gpu": 1,
+   "width": 832,
+   "height": 560,
+   "frames": 65,
+   "switch_step": 2,
+   "high_ram_min_gb": 0.161104,
+   "high_seconds": 306.8,
+   "low_gpu": 0,
+   "retries": [
+    "low: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 178.2,
+   "low_ram_min_gb": 6.785624,
+   "low_seconds": 840.7,
+   "ok": true,
+   "file": "s-011-R-6.mp4",
+   "finished_at": "2026-11-09T11:16:00+00:00",
+   "seconds": 1147.5
+  },
+  {
+   "clip": "s-011-R-7",
+   "shot": "s-011-R-7",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "i2v",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 6,
+   "duration": 5.0,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/s-011-R-7-first.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "frames": 81,
+   "switch_step": 2,
+   "retries": [
+    "high: <urlopen error [Errno 111] Connection refused>"
+   ],
+   "lost_seconds": 121.4,
+   "high_ram_min_gb": 6.867312,
+   "high_seconds": 560.9,
+   "low_gpu": 1,
+   "low_ram_min_gb": 6.132064,
+   "low_seconds": 650.6,
+   "ok": true,
+   "file": "s-011-R-7.mp4",
+   "finished_at": "2026-11-09T11:22:27+00:00",
+   "seconds": 1211.5
+  }
+ ],
+ "setup_seconds": 206.1,
+ "hours": 11.5,
+ "restarts": {
+  "0": 27,
+  "1": 28
+ },
+ "finished_at": "2026-11-09T11:22:29+00:00",
+ "session_seconds": 32179.9
+}

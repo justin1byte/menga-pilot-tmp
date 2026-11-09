@@ -1,0 +1,400 @@
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8189
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+Requested to load WanTEModel
+loaded completely;  6419.48 MB loaded, full load: True
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cuda:0, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 2601.18 MB usable, 242.03 MB loaded, full load: True
+gguf qtypes: F16 (694), Q4_K (280), Q6_K (120), F32 (1)
+model weight dtype torch.float16, manual cast: None
+model_type FLOW
+Requested to load WAN21
+loaded partially; 9316.25 MB usable, 9245.88 MB loaded, 91.31 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [01:41<05:05, 101.80s/it]
+ 50%|█████     | 2/4 [03:27<03:28, 104.05s/it]
+ 75%|███████▌  | 3/4 [05:12<01:44, 104.51s/it]
+100%|██████████| 4/4 [06:59<00:00, 105.51s/it]
+100%|██████████| 4/4 [06:59<00:00, 104.88s/it]
+Requested to load WanVAE
+Unloaded partially: 1267.94 MB freed, 7977.94 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 265
+loaded completely; 268.04 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 547.90 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 1646.46 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 499
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 3958.10 MB freed, 2373.39 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 809
+loaded completely; 10229.85 MB usable, 9337.19 MB loaded, full load: True
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [01:23<04:10, 83.58s/it]
+ 50%|█████     | 2/4 [02:45<02:45, 82.82s/it]
+ 75%|███████▌  | 3/4 [04:07<01:22, 82.10s/it]
+100%|██████████| 4/4 [05:28<00:00, 81.74s/it]
+100%|██████████| 4/4 [05:28<00:00, 82.07s/it]
+Requested to load WanVAE
+Unloaded partially: 1260.74 MB freed, 8078.81 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1232
+loaded completely; 344.91 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 385.80 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 1744.96 MB freed, 6333.85 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1480
+loaded completely; 7071.61 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 5010.33 MB freed, 1323.52 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 1828
+
+--- menga: restarting ComfyUI 1 (restart 25; host RAM 17.8 GB free) ---
+Set cuda device to: 1
+Setting output directory to: /kaggle/tmp/menga/out1
+Setting input directory to: /kaggle/tmp/menga/in
+Checkpoint files will always be loaded safely.
+Total VRAM 14912 MB, total RAM 32099 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 Tesla T4 : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 30493.0
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_hit_on_mesh', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'int8_linear_modulated', 'int8_linear_rms_modulated', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_gated_residual', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Using pytorch attention
+Python version: 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+ComfyUI version: 0.10.0
+ComfyUI frontend version: 1.36.14
+[Prompt Server] web root: /usr/local/lib/python3.13/dist-packages/comfyui_frontend_package/static
+ComfyUI-GGUF: Allowing full torch compile
+
+Import times for custom nodes:
+   0.0 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/websocket_image_save.py
+   0.1 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/ComfyUI-GGUF
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Assets scan(roots=['models']) completed in 0.030s (created=0, skipped_existing=16, total_seen=16)
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8189
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+Requested to load WanTEModel
+loaded completely;  6419.48 MB loaded, full load: True
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cuda:0, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 1687.12 MB usable, 242.03 MB loaded, full load: True
+gguf qtypes: F16 (694), Q4_K (280), Q6_K (120), F32 (1)
+model weight dtype torch.float16, manual cast: None
+model_type FLOW
+Requested to load WAN21
+loaded partially; 8453.54 MB usable, 8380.27 MB loaded, 956.91 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:11<06:34, 131.55s/it]
+ 50%|█████     | 2/4 [04:27<04:27, 133.95s/it]
+ 75%|███████▌  | 3/4 [06:45<02:15, 135.80s/it]
+100%|██████████| 4/4 [09:01<00:00, 135.87s/it]
+100%|██████████| 4/4 [09:01<00:00, 135.29s/it]
+Requested to load WanVAE
+Unloaded partially: 1471.83 MB freed, 6908.45 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 453
+loaded completely; 271.13 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:11:36
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 576.96 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 535
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 4678.05 MB freed, 1653.44 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 871
+loaded completely; 9606.79 MB usable, 9337.19 MB loaded, full load: True
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [01:39<04:57, 99.28s/it]
+ 50%|█████     | 2/4 [03:19<03:19, 99.69s/it]
+ 75%|███████▌  | 3/4 [04:59<01:39, 99.97s/it]
+100%|██████████| 4/4 [06:39<00:00, 100.07s/it]
+100%|██████████| 4/4 [06:39<00:00, 99.94s/it] 
+Requested to load WanVAE
+Unloaded partially: 2147.30 MB freed, 7192.26 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1420
+loaded completely; 342.79 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 464.54 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 858.41 MB freed, 6333.85 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1542
+loaded completely; 7069.61 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 3237.20 MB freed, 3096.65 MB remains loaded, 189.98 MB buffer reserved, lowvram patches: 1820
+loaded partially; 9000.90 MB usable, 8929.09 MB loaded, 408.10 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:00<06:00, 120.07s/it]
+--- menga: restarting ComfyUI 1 (restart 26; host RAM 28.2 GB free) ---
+Set cuda device to: 1
+Setting output directory to: /kaggle/tmp/menga/out1
+Setting input directory to: /kaggle/tmp/menga/in
+Checkpoint files will always be loaded safely.
+Total VRAM 14912 MB, total RAM 32099 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 Tesla T4 : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 30493.0
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_hit_on_mesh', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'int8_linear_modulated', 'int8_linear_rms_modulated', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_gated_residual', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+Using pytorch attention
+Python version: 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+ComfyUI version: 0.10.0
+ComfyUI frontend version: 1.36.14
+[Prompt Server] web root: /usr/local/lib/python3.13/dist-packages/comfyui_frontend_package/static
+ComfyUI-GGUF: Allowing full torch compile
+
+Import times for custom nodes:
+   0.0 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/websocket_image_save.py
+   0.1 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/ComfyUI-GGUF
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Assets scan(roots=['models']) completed in 0.028s (created=0, skipped_existing=16, total_seen=16)
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8189
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+Requested to load WanTEModel
+loaded completely;  6419.48 MB loaded, full load: True
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cuda:0, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 3362.90 MB usable, 242.03 MB loaded, full load: True
+gguf qtypes: F16 (694), Q4_K (280), Q6_K (120), F32 (1)
+model weight dtype torch.float16, manual cast: None
+model_type FLOW
+Requested to load WAN21
+loaded partially; 8884.90 MB usable, 8814.53 MB loaded, 522.66 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:02<06:07, 122.58s/it]
+ 50%|█████     | 2/4 [04:01<04:01, 120.66s/it]
+ 75%|███████▌  | 3/4 [06:01<02:00, 120.04s/it]
+100%|██████████| 4/4 [08:00<00:00, 119.92s/it]
+100%|██████████| 4/4 [08:00<00:00, 120.23s/it]
+Requested to load WanVAE
+loaded completely; 320.12 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:10:23
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 2483.05 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 394
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 4235.00 MB freed, 2096.48 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 714
+loaded partially; 9290.46 MB usable, 9220.10 MB loaded, 117.09 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [01:51<05:34, 111.60s/it]
+ 50%|█████     | 2/4 [03:42<03:42, 111.10s/it]
+ 75%|███████▌  | 3/4 [05:33<01:51, 111.12s/it]
+100%|██████████| 4/4 [07:24<00:00, 110.99s/it]
+100%|██████████| 4/4 [07:24<00:00, 111.07s/it]
+Requested to load WanVAE
+Unloaded partially: 1425.10 MB freed, 7795.00 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 988
+loaded completely; 273.25 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 508.04 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 1463.52 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1196
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 5287.24 MB freed, 1044.25 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 1554
+
+--- menga: restarting ComfyUI 1 (restart 27; host RAM 29.5 GB free) ---
+Set cuda device to: 1
+Setting output directory to: /kaggle/tmp/menga/out1
+Setting input directory to: /kaggle/tmp/menga/in
+Checkpoint files will always be loaded safely.
+Total VRAM 14912 MB, total RAM 32099 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 Tesla T4 : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 30493.0
+Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'int8_linear_modulated', 'int8_linear_rms_modulated', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_gated_residual', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_hit_on_mesh', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+Using pytorch attention
+Python version: 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+ComfyUI version: 0.10.0
+ComfyUI frontend version: 1.36.14
+[Prompt Server] web root: /usr/local/lib/python3.13/dist-packages/comfyui_frontend_package/static
+ComfyUI-GGUF: Allowing full torch compile
+
+Import times for custom nodes:
+   0.0 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/websocket_image_save.py
+   0.1 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/ComfyUI-GGUF
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Assets scan(roots=['models']) completed in 0.030s (created=0, skipped_existing=16, total_seen=16)
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8189
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+Requested to load WanTEModel
+loaded completely;  6419.48 MB loaded, full load: True
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cuda:0, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 1382.43 MB usable, 242.03 MB loaded, full load: True
+gguf qtypes: F16 (694), Q4_K (280), Q6_K (120), F32 (1)
+model weight dtype torch.float16, manual cast: None
+model_type FLOW
+Requested to load WAN21
+loaded partially; 8165.98 MB usable, 8095.61 MB loaded, 1241.58 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:24<07:12, 144.12s/it]
+ 50%|█████     | 2/4 [04:55<04:56, 148.49s/it]
+ 75%|███████▌  | 3/4 [07:25<02:29, 149.13s/it]
+100%|██████████| 4/4 [09:54<00:00, 148.99s/it]
+100%|██████████| 4/4 [09:54<00:00, 148.58s/it]
+Requested to load WanVAE
+Unloaded partially: 1538.96 MB freed, 6556.64 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 422
+loaded completely; 267.47 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:12:39
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 225.16 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 454
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 4844.19 MB freed, 1487.29 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 796
+loaded partially; 8715.33 MB usable, 8644.96 MB loaded, 692.23 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:11<06:33, 131.08s/it]
+ 50%|█████     | 2/4 [04:21<04:21, 130.74s/it]
+ 75%|███████▌  | 3/4 [06:32<02:10, 130.87s/it]
+100%|██████████| 4/4 [08:43<00:00, 130.96s/it]
+100%|██████████| 4/4 [08:43<00:00, 130.92s/it]
+Requested to load WanVAE
+Unloaded partially: 1567.65 MB freed, 7077.31 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1050
+loaded completely; 280.00 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 591.07 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 745.83 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1156
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 4068.86 MB freed, 2262.63 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 1470
+loaded completely; 9434.25 MB usable, 9337.19 MB loaded, full load: True
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [01:48<05:24, 108.17s/it]
+ 50%|█████     | 2/4 [03:34<03:34, 107.20s/it]
+ 75%|███████▌  | 3/4 [05:20<01:46, 106.49s/it]
+100%|██████████| 4/4 [07:05<00:00, 106.11s/it]
+100%|██████████| 4/4 [07:05<00:00, 106.47s/it]
+Requested to load WanVAE
+Unloaded partially: 1443.68 MB freed, 7895.87 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 1919
+loaded completely; 350.11 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 486.72 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 1562.02 MB freed, 6333.85 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 2141
+loaded completely; 7069.61 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 4124.24 MB freed, 2209.61 MB remains loaded, 276.90 MB buffer reserved, lowvram patches: 2457
+loaded partially; 8761.26 MB usable, 8689.86 MB loaded, 647.32 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:09<06:28, 129.59s/it]
+--- menga: restarting ComfyUI 1 (restart 28; host RAM 29.5 GB free) ---
+Set cuda device to: 1
+Setting output directory to: /kaggle/tmp/menga/out1
+Setting input directory to: /kaggle/tmp/menga/in
+Checkpoint files will always be loaded safely.
+Total VRAM 14912 MB, total RAM 32099 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 Tesla T4 : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 30493.0
+Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_hit_on_mesh', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'int8_linear_modulated', 'int8_linear_rms_modulated', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_gated_residual', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+Using pytorch attention
+Python version: 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+ComfyUI version: 0.10.0
+ComfyUI frontend version: 1.36.14
+[Prompt Server] web root: /usr/local/lib/python3.13/dist-packages/comfyui_frontend_package/static
+ComfyUI-GGUF: Allowing full torch compile
+
+Import times for custom nodes:
+   0.0 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/websocket_image_save.py
+   0.1 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/ComfyUI-GGUF
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Assets scan(roots=['models']) completed in 0.028s (created=0, skipped_existing=16, total_seen=16)
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8189
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+Requested to load WanTEModel
+loaded completely;  6419.48 MB loaded, full load: True
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cuda:0, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 3058.21 MB usable, 242.03 MB loaded, full load: True
+gguf qtypes: F16 (694), Q4_K (280), Q6_K (120), F32 (1)
+model weight dtype torch.float16, manual cast: None
+model_type FLOW
+Requested to load WAN21
+loaded partially; 9134.12 MB usable, 9063.76 MB loaded, 273.43 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [01:54<05:43, 114.34s/it]
+ 50%|█████     | 2/4 [03:45<03:44, 112.46s/it]
+ 75%|███████▌  | 3/4 [05:36<01:51, 111.61s/it]
+100%|██████████| 4/4 [07:27<00:00, 111.50s/it]
+100%|██████████| 4/4 [07:27<00:00, 111.85s/it]
+Requested to load WanVAE
+Unloaded partially: 551.07 MB freed, 8512.69 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 247
+loaded completely; 266.50 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 573.60 seconds
+got prompt
+Requested to load WanTEModel
+Unloaded partially: 2181.20 MB freed, 6331.48 MB remains loaded, 70.36 MB buffer reserved, lowvram patches: 557
+loaded completely; 7073.97 MB usable, 6419.48 MB loaded, full load: True
+Unloaded partially: 3237.20 MB freed, 3094.28 MB remains loaded, 189.98 MB buffer reserved, lowvram patches: 835
+loaded partially; 8427.76 MB usable, 8352.13 MB loaded, 985.06 MB offloaded, 70.36 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|██▌       | 1/4 [02:26<07:20, 146.95s/it]
+ 50%|█████     | 2/4 [04:51<04:50, 145.25s/it]
+ 75%|███████▌  | 3/4 [07:14<02:24, 144.38s/it]
+100%|██████████| 4/4 [09:38<00:00, 144.21s/it]
+100%|██████████| 4/4 [09:38<00:00, 144.58s/it]
+Requested to load WanVAE
+loaded completely; 782.53 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:10:47
