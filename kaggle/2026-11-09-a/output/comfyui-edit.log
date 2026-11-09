@@ -1,0 +1,60 @@
+
+Import times for custom nodes:
+   0.0 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/websocket_image_save.py
+   0.1 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/ComfyUI-GGUF
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Running upgrade  -> 0001_assets, Initial assets schema
+Revision ID: 0001_assets
+Revises: None
+Create Date: 2025-12-10 00:00:00
+Database upgraded from None to 0001_assets
+Assets scan(roots=['models']) completed in 0.072s (created=14, skipped_existing=0, total_seen=14)
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 13244.23 MB usable, 242.03 MB loaded, full load: True
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+Requested to load QwenImageTEModel_
+loaded completely; 13303.58 MB usable, 7910.28 MB loaded, full load: True
+gguf qtypes: F32 (1087), BF16 (6), Q5_K (28), Q4_K (580), Q6_K (232)
+model weight dtype torch.bfloat16, manual cast: torch.float32
+model_type FLUX
+Requested to load QwenImage
+loaded partially; 11535.82 MB usable, 11500.34 MB loaded, 1067.92 MB offloaded, 35.47 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/20 [00:00<?, ?it/s]
+  5%|▌         | 1/20 [02:30<47:34, 150.23s/it]
+ 10%|█         | 2/20 [05:02<45:22, 151.27s/it]
+ 15%|█▌        | 3/20 [07:33<42:51, 151.25s/it]
+ 20%|██        | 4/20 [10:03<40:11, 150.74s/it]
+ 25%|██▌       | 5/20 [12:33<37:38, 150.57s/it]
+ 30%|███       | 6/20 [15:02<35:00, 150.03s/it]
+ 35%|███▌      | 7/20 [17:32<32:29, 149.95s/it]
+ 40%|████      | 8/20 [20:02<29:58, 149.88s/it]
+ 45%|████▌     | 9/20 [22:33<27:33, 150.29s/it]
+ 50%|█████     | 10/20 [25:04<25:06, 150.60s/it]
+ 55%|█████▌    | 11/20 [27:35<22:36, 150.77s/it]
+ 60%|██████    | 12/20 [30:06<20:06, 150.82s/it]
+ 65%|██████▌   | 13/20 [32:37<17:36, 150.88s/it]
+ 70%|███████   | 14/20 [35:10<15:07, 151.29s/it]
+ 75%|███████▌  | 15/20 [37:41<12:36, 151.25s/it]
+ 80%|████████  | 16/20 [40:12<10:04, 151.23s/it]
+ 85%|████████▌ | 17/20 [42:44<07:34, 151.46s/it]
+ 90%|█████████ | 18/20 [45:15<05:02, 151.39s/it]
+ 95%|█████████▌| 19/20 [47:47<02:31, 151.53s/it]
+100%|██████████| 20/20 [50:19<00:00, 151.69s/it]
+100%|██████████| 20/20 [50:19<00:00, 150.97s/it]
+Requested to load WanVAE
+loaded completely; 1277.56 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:52:03
