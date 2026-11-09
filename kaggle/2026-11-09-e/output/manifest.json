@@ -1,0 +1,102 @@
+{
+ "kernel_version": 5,
+ "export": {
+  "format": 1,
+  "project": "cell",
+  "run": "2026-11-09-e",
+  "backend": "kaggle",
+  "kernel": "naichiangpai/menga-wan22",
+  "exported_at": "2026-11-09T18:15:44+00:00",
+  "day": "2026-11-10",
+  "budget": 13899.300000000003,
+  "setup": 600.0,
+  "gpus": 2,
+  "hours": 0.2938888888888904,
+  "batch_gpu_estimate": 1322.0
+ },
+ "started_at": "2026-11-09T18:17:38+00:00",
+ "comfyui": "ComfyUI v0.10.0",
+ "gguf_node": "ComfyUI-GGUF 6ea2651",
+ "model": "Wan 2.2 14B I2V A14B (GGUF Q4_K_M, lightx2v; Kaggle T4)",
+ "models": {
+  "high": "QuantStack/Wan2.2-I2V-A14B-GGUF@6c6717459277b9cd1f72579d78a0fd62a79e57dc/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf",
+  "low": "QuantStack/Wan2.2-I2V-A14B-GGUF@6c6717459277b9cd1f72579d78a0fd62a79e57dc/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf",
+  "text": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a40737a995bf5818954cfce6d59443b0f04/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+  "vae": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a40737a995bf5818954cfce6d59443b0f04/split_files/vae/wan_2.1_vae.safetensors",
+  "lora": "Kijai/WanVideo_comfy@8260d429d19fd7a72304cad059160b95d843913f/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors"
+ },
+ "lora_strength": {
+  "high": 3.0,
+  "low": 1.0
+ },
+ "profiles": {
+  "i2v": {
+   "sampler": "uni_pc_bh2",
+   "shift": 3.0
+  },
+  "first-last": {
+   "sampler": "euler",
+   "shift": 8.0
+  },
+  "anchored": {
+   "sampler": "euler",
+   "shift": 8.0
+  }
+ },
+ "gpus": [
+  "GPU 0: Tesla T4 (UUID: GPU-be6cfd99-c9cc-2923-1725-0d627c0ee8db)",
+  "GPU 1: Tesla T4 (UUID: GPU-9024703b-dcba-2af4-2924-522e740f5087)"
+ ],
+ "jobs": [
+  {
+   "clip": "s-002-R-1--s-002-R-2_1",
+   "shot": "s-002-R-1--s-002-R-2_1",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-1-end.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-1--s-002-R-2_mid.png"
+   ],
+   "ok": false,
+   "error": "not started: the run's 0.293889 h would end before it finished",
+   "error_kind": "session",
+   "finished_at": "2026-11-09T18:20:44+00:00"
+  },
+  {
+   "clip": "s-002-R-1--s-002-R-2_2",
+   "shot": "s-002-R-1--s-002-R-2_2",
+   "candidate": null,
+   "attempt": 1,
+   "mode": "first-last",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 42,
+   "steps": 8,
+   "duration": 2.5,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-1--s-002-R-2_mid.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-002-R-2.png"
+   ],
+   "ok": false,
+   "error": "not started: the run's 0.293889 h would end before it finished",
+   "error_kind": "session",
+   "finished_at": "2026-11-09T18:20:44+00:00"
+  }
+ ],
+ "setup_seconds": 193.4,
+ "hours": 0.2938888888888904,
+ "restarts": {
+  "0": 0,
+  "1": 0
+ },
+ "finished_at": "2026-11-09T18:20:44+00:00",
+ "session_seconds": 193.7
+}

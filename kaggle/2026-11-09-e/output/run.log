@@ -1,0 +1,13 @@
+[    0.0s] menga kernel v5: 2 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-be6cfd99-c9cc-2923-1725-0d627c0ee8db)', 'GPU 1: Tesla T4 (UUID: GPU-9024703b-dcba-2af4-2924-522e740f5087)']; python 3.13.16
+[    7.2s] torch 2.11.0+cu130, CUDA 13.0
+[    7.2s] work dir /kaggle/tmp: 1038 GB free
+[   14.9s] model vae: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/vae/wan_2.1_vae.safetensors 0.3 GB in 3s
+[   48.6s] model lora: Kijai/WanVideo_comfy@8260d42/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors 1.5 GB in 37s
+[   73.2s] model text: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors 6.7 GB in 61s
+[  134.8s] model high: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf 9.7 GB in 123s
+[  139.8s] model low: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf 9.7 GB in 128s
+[  159.4s] ComfyUI and models ready in 152s; host RAM 30.9 GB free
+[  193.4s] setup done in 193s; 2 worker(s); steps that cannot end by 0.293889 h are not started
+[  193.4s] s-002-R-1--s-002-R-2_1: not started: the run's 0.293889 h would end before it finished
+[  193.4s] s-002-R-1--s-002-R-2_2: not started: the run's 0.293889 h would end before it finished
+[  193.7s] finished: 0/2 clip(s) in 194s
