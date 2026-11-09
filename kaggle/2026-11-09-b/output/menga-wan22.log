@@ -1,0 +1,17 @@
+[{"stream_name":"stdout","time":1.46666603,"data":"[    0.0s] menga kernel v5: 1 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-6db45afe-8c30-41f2-5264-6f793b1f392e)', 'GPU 1: Tesla T4 (UUID: GPU-0810d131-3d58-d963-912e-a3331f715581)']; python 3.13.16\n"}
+,{"stream_name":"stdout","time":14.919878917,"data":"[   13.5s] torch 2.11.0+cu130, CUDA 13.0\n"}
+,{"stream_name":"stdout","time":14.920475421,"data":"[   13.5s] work dir /kaggle/tmp: 1038 GB free\n"}
+,{"stream_name":"stderr","time":22.605872514,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":25.435468678,"data":"[   24.0s] model edit_vae: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/vae/qwen_image_vae.safetensors 0.3 GB in 4s\n"}
+,{"stream_name":"stdout","time":100.3309574,"data":"[   98.9s] model edit_text: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors 9.4 GB in 79s\n"}
+,{"stream_name":"stdout","time":123.8216029,"data":"[  122.4s] model edit: QuantStack/Qwen-Image-Edit-2509-GGUF@84a3006/Qwen-Image-Edit-2509-Q4_K_M.gguf 13.1 GB in 102s\n"}
+,{"stream_name":"stdout","time":138.896499731,"data":"[  137.5s] ComfyUI and image-edit models ready in 124s\n"}
+,{"stream_name":"stdout","time":3576.506322848,"data":"[ 3575.1s] s-009-R-1--s-009-R-2_mid: intermediate keyframe done in 3389s\n"}
+,{"stream_name":"stdout","time":3577.60786785,"data":"[ 3576.2s] finished: 1/1 clip(s) in 3576s\n"}
+,{"stream_name":"stderr","time":3587.349893561,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3587.349923863,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3587.840893932,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3587.840922062,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3588.833919105,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3590.37883084,"data":"[NbConvertApp] Writing 564134 bytes to __results__.html\n"}
+]

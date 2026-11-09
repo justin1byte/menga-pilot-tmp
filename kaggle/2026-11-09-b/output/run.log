@@ -1,0 +1,9 @@
+[    0.0s] menga kernel v5: 1 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-6db45afe-8c30-41f2-5264-6f793b1f392e)', 'GPU 1: Tesla T4 (UUID: GPU-0810d131-3d58-d963-912e-a3331f715581)']; python 3.13.16
+[   13.5s] torch 2.11.0+cu130, CUDA 13.0
+[   13.5s] work dir /kaggle/tmp: 1038 GB free
+[   24.0s] model edit_vae: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/vae/qwen_image_vae.safetensors 0.3 GB in 4s
+[   98.9s] model edit_text: Comfy-Org/Qwen-Image_ComfyUI@1f12b17/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors 9.4 GB in 79s
+[  122.4s] model edit: QuantStack/Qwen-Image-Edit-2509-GGUF@84a3006/Qwen-Image-Edit-2509-Q4_K_M.gguf 13.1 GB in 102s
+[  137.5s] ComfyUI and image-edit models ready in 124s
+[ 3575.1s] s-009-R-1--s-009-R-2_mid: intermediate keyframe done in 3389s
+[ 3576.2s] finished: 1/1 clip(s) in 3576s

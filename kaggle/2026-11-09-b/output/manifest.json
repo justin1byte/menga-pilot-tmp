@@ -1,0 +1,90 @@
+{
+ "kernel_version": 5,
+ "export": {
+  "format": 1,
+  "project": "cell",
+  "run": "2026-11-09-b",
+  "backend": "kaggle",
+  "kernel": "naichiangpai/menga-wan22",
+  "exported_at": "2026-11-09T01:09:52+00:00",
+  "day": "2026-11-09",
+  "budget": 16834.100000000006,
+  "setup": 600.0,
+  "gpus": 2,
+  "hours": 8.5,
+  "batch_gpu_estimate": 3124.8
+ },
+ "started_at": "2026-11-09T01:10:31+00:00",
+ "comfyui": "ComfyUI v0.10.0",
+ "gguf_node": "ComfyUI-GGUF 6ea2651",
+ "model": "Wan 2.2 14B I2V A14B (GGUF Q4_K_M, lightx2v; Kaggle T4)",
+ "models": {
+  "high": "QuantStack/Wan2.2-I2V-A14B-GGUF@6c6717459277b9cd1f72579d78a0fd62a79e57dc/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf",
+  "low": "QuantStack/Wan2.2-I2V-A14B-GGUF@6c6717459277b9cd1f72579d78a0fd62a79e57dc/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf",
+  "text": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a40737a995bf5818954cfce6d59443b0f04/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+  "vae": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a40737a995bf5818954cfce6d59443b0f04/split_files/vae/wan_2.1_vae.safetensors",
+  "lora": "Kijai/WanVideo_comfy@8260d429d19fd7a72304cad059160b95d843913f/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors"
+ },
+ "lora_strength": {
+  "high": 3.0,
+  "low": 1.0
+ },
+ "profiles": {
+  "i2v": {
+   "sampler": "uni_pc_bh2",
+   "shift": 3.0
+  },
+  "first-last": {
+   "sampler": "euler",
+   "shift": 8.0
+  },
+  "anchored": {
+   "sampler": "euler",
+   "shift": 8.0
+  }
+ },
+ "gpus": [
+  "GPU 0: Tesla T4 (UUID: GPU-6db45afe-8c30-41f2-5264-6f793b1f392e)",
+  "GPU 1: Tesla T4 (UUID: GPU-0810d131-3d58-d963-912e-a3331f715581)"
+ ],
+ "jobs": [
+  {
+   "clip": "s-009-R-1--s-009-R-2_mid",
+   "shot": "s-009-R-1--s-009-R-2_mid",
+   "candidate": null,
+   "attempt": 2,
+   "mode": "image-edit",
+   "strategy": [
+    "keep-face"
+   ],
+   "seed": 43,
+   "steps": 20,
+   "duration": null,
+   "stills": [
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-009-R-1.png",
+    "https://raw.githubusercontent.com/justin1byte/menga-pilot-tmp/main/film/kf/s-009-R-2.png"
+   ],
+   "gpu": 0,
+   "width": 832,
+   "height": 480,
+   "edit": {
+    "init": "blend",
+    "denoise": 0.8,
+    "cfg": 2.5
+   },
+   "ok": true,
+   "file": "s-009-R-1--s-009-R-2_mid.png",
+   "finished_at": "2026-11-09T02:09:53+00:00",
+   "seconds": 3389.0
+  }
+ ],
+ "edit_model": "Qwen-Image-Edit-2509 (GGUF Q4_K_M; Kaggle T4)",
+ "edit_models": {
+  "edit": "QuantStack/Qwen-Image-Edit-2509-GGUF@84a3006979126011422eeeefe0c9485ddf431ef5/Qwen-Image-Edit-2509-Q4_K_M.gguf",
+  "edit_vae": "Comfy-Org/Qwen-Image_ComfyUI@1f12b17be14c89b026c51a91d67c32f84bb047bc/split_files/vae/qwen_image_vae.safetensors",
+  "edit_text": "Comfy-Org/Qwen-Image_ComfyUI@1f12b17be14c89b026c51a91d67c32f84bb047bc/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors"
+ },
+ "edit_setup_seconds": 185.5,
+ "finished_at": "2026-11-09T02:09:54+00:00",
+ "session_seconds": 3576.2
+}

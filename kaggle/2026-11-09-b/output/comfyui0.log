@@ -1,0 +1,83 @@
+Set cuda device to: 0
+Setting output directory to: /kaggle/tmp/menga/out0
+Setting input directory to: /kaggle/tmp/menga/in0
+Checkpoint files will always be loaded safely.
+Total VRAM 14912 MB, total RAM 32099 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 Tesla T4 : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 30493.0
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_hit_on_mesh', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'int8_linear_modulated', 'int8_linear_rms_modulated', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_gated_residual', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+Using pytorch attention
+Python version: 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+ComfyUI version: 0.10.0
+****** User settings have been changed to be stored on the server instead of browser storage. ******
+****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+ComfyUI frontend version: 1.36.14
+[Prompt Server] web root: /usr/local/lib/python3.13/dist-packages/comfyui_frontend_package/static
+ComfyUI-GGUF: Allowing full torch compile
+
+Import times for custom nodes:
+   0.0 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/websocket_image_save.py
+   0.1 seconds: /kaggle/tmp/menga/ComfyUI/custom_nodes/ComfyUI-GGUF
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Running upgrade  -> 0001_assets, Initial assets schema
+Revision ID: 0001_assets
+Revises: None
+Create Date: 2025-12-10 00:00:00
+Database upgraded from None to 0001_assets
+Assets scan(roots=['models']) completed in 0.053s (created=14, skipped_existing=0, total_seen=14)
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+got prompt
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+Requested to load WanVAE
+loaded completely; 13244.23 MB usable, 242.03 MB loaded, full load: True
+Found quantization metadata version 1
+Using MixedPrecisionOps for text encoder
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+Requested to load QwenImageTEModel_
+loaded completely; 13303.58 MB usable, 7910.28 MB loaded, full load: True
+gguf qtypes: F32 (1087), BF16 (6), Q5_K (28), Q4_K (580), Q6_K (232)
+model weight dtype torch.bfloat16, manual cast: torch.float32
+model_type FLUX
+Requested to load QwenImage
+loaded partially; 11535.82 MB usable, 11500.34 MB loaded, 1067.92 MB offloaded, 35.47 MB buffer reserved, lowvram patches: 0
+
+  0%|          | 0/20 [00:00<?, ?it/s]
+  5%|▌         | 1/20 [02:40<50:44, 160.26s/it]
+ 10%|█         | 2/20 [05:26<49:06, 163.70s/it]
+ 15%|█▌        | 3/20 [08:11<46:37, 164.55s/it]
+ 20%|██        | 4/20 [10:56<43:55, 164.71s/it]
+ 25%|██▌       | 5/20 [13:41<41:10, 164.72s/it]
+ 30%|███       | 6/20 [16:26<38:26, 164.77s/it]
+ 35%|███▌      | 7/20 [19:10<35:40, 164.65s/it]
+ 40%|████      | 8/20 [21:56<32:58, 164.89s/it]
+ 45%|████▌     | 9/20 [24:41<30:14, 164.92s/it]
+ 50%|█████     | 10/20 [27:26<27:30, 165.05s/it]
+ 55%|█████▌    | 11/20 [30:13<24:49, 165.54s/it]
+ 60%|██████    | 12/20 [32:58<22:03, 165.46s/it]
+ 65%|██████▌   | 13/20 [35:43<19:17, 165.39s/it]
+ 70%|███████   | 14/20 [38:25<16:26, 164.40s/it]
+ 75%|███████▌  | 15/20 [41:09<13:41, 164.26s/it]
+ 80%|████████  | 16/20 [43:51<10:53, 163.33s/it]
+ 85%|████████▌ | 17/20 [46:35<08:10, 163.63s/it]
+ 90%|█████████ | 18/20 [49:16<05:25, 162.85s/it]
+ 95%|█████████▌| 19/20 [51:59<02:42, 162.99s/it]
+100%|██████████| 20/20 [54:44<00:00, 163.50s/it]
+100%|██████████| 20/20 [54:44<00:00, 164.22s/it]
+Requested to load WanVAE
+loaded completely; 1277.56 MB usable, 242.03 MB loaded, full load: True
+Prompt executed in 00:56:28
