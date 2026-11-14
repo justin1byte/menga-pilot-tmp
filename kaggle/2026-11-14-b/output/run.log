@@ -1,0 +1,75 @@
+[    0.1s] menga kernel v5: 12 job(s); GPUs: ['GPU 0: Tesla T4 (UUID: GPU-0450f2ce-7a0e-b348-23f1-fafa6355254a)', 'GPU 1: Tesla T4 (UUID: GPU-b9c7ee3e-4f07-5933-0e3f-217a79cc2df2)']; python 3.13.16
+[    9.5s] torch 2.11.0+cu130, CUDA 13.0
+[    9.5s] work dir /kaggle/tmp: 1038 GB free
+[   18.8s] model vae: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/vae/wan_2.1_vae.safetensors 0.3 GB in 3s
+[   44.2s] model lora: Kijai/WanVideo_comfy@8260d42/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors 1.5 GB in 29s
+[   68.3s] model text: Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors 6.7 GB in 53s
+[  120.0s] model low: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf 9.7 GB in 105s
+[  134.4s] model high: QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf 9.7 GB in 119s
+[  150.1s] ComfyUI and models ready in 141s; host RAM 30.9 GB free
+[  188.1s] setup done in 188s; 2 worker(s); steps that cannot end by 11 h are not started
+[  188.5s] s-005-R-2--s-005-R-3_1: high-noise steps on GPU 0 (host RAM 29.5 GB free)
+[  188.6s] s-005-R-2--s-005-R-3_2: high-noise steps on GPU 1 (host RAM 29.5 GB free)
+[  496.8s] s-005-R-2--s-005-R-3_1: high-noise steps done in 308.7s on GPU 0
+[  497.3s] s-008-L-4--s-008-L-5_1: high-noise steps on GPU 0 (host RAM 13.7 GB free)
+[  604.9s] s-005-R-2--s-005-R-3_2: high-noise steps done in 416.8s on GPU 1
+[  605.3s] s-008-L-4--s-008-L-5_2: high-noise steps on GPU 1 (host RAM 10.0 GB free)
+[  737.5s] s-008-L-4--s-008-L-5_1: high-noise steps done in 240.7s on GPU 0
+[  737.7s] s-009-L-1: high-noise steps on GPU 0 (host RAM 6.4 GB free)
+[  881.8s] s-008-L-4--s-008-L-5_2: high-noise steps done in 276.9s on GPU 1
+[  882.3s] s-009-R-2--s-009-R-3_1: high-noise steps on GPU 1 (host RAM 4.3 GB free)
+[  970.2s] s-009-L-1: high-noise steps done in 232.7s on GPU 0
+[  970.6s] s-009-R-2--s-009-R-3_2: high-noise steps on GPU 0 (host RAM 2.4 GB free)
+[ 1162.5s] s-009-R-2--s-009-R-3_1: high-noise steps done in 280.8s on GPU 1
+[ 1162.8s] s-010-L-1: high-noise steps on GPU 1 (host RAM 1.2 GB free)
+[ 1188.9s] s-009-R-2--s-009-R-3_2: high-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[ 1188.9s] s-010-L-1: high-noise steps lost on GPU 1 (<urlopen error [Errno 111] Connection refused>); will try again
+[ 1225.8s] s-010-L-1: high-noise steps on GPU 0 (host RAM 29.7 GB free)
+[ 1226.1s] s-009-R-2--s-009-R-3_2: high-noise steps on GPU 1 (host RAM 29.6 GB free)
+[ 1532.1s] s-010-L-1: high-noise steps done in 306.3s on GPU 0
+[ 1532.4s] s-010-L-2: high-noise steps on GPU 0 (host RAM 13.7 GB free)
+[ 1650.4s] s-009-R-2--s-009-R-3_2: high-noise steps done in 424.3s on GPU 1
+[ 1650.6s] s-010-L-3: high-noise steps on GPU 1 (host RAM 10.0 GB free)
+[ 1730.5s] s-010-L-2: high-noise steps done in 198.4s on GPU 0
+[ 1730.7s] s-010-R-4: high-noise steps on GPU 0 (host RAM 6.3 GB free)
+[ 1922.9s] s-010-R-4: high-noise steps done in 192.3s on GPU 0
+[ 1923.1s] s-011-R-1: high-noise steps on GPU 0 (host RAM 4.4 GB free)
+[ 2019.0s] s-010-L-3: high-noise steps done in 368.6s on GPU 1
+[ 2025.2s] s-011-R-1: high-noise steps lost on GPU 0 (ComfyUI 0 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 14.7 GB free now, lowest seen 0.4 GB)); will try again
+[ 2027.0s] s-005-R-2--s-005-R-3_1: low-noise steps on GPU 1 (host RAM 12.9 GB free)
+[ 2075.4s] s-011-R-1: high-noise steps on GPU 0 (host RAM 23.3 GB free)
+[ 2383.4s] s-011-R-1: high-noise steps done in 308.0s on GPU 0
+[ 2391.4s] s-005-R-2--s-005-R-3_2: low-noise steps on GPU 0 (host RAM 5.2 GB free)
+[ 2408.6s] s-005-R-2--s-005-R-3_1: done, low-noise + decode 381.6s on GPU 1
+[ 2408.6s] s-008-L-4--s-008-L-5_1: low-noise steps on GPU 1 (host RAM 18.5 GB free)
+[ 2709.6s] s-005-R-2--s-005-R-3_2: done, low-noise + decode 318.2s on GPU 0
+[ 2709.6s] s-008-L-4--s-008-L-5_2: low-noise steps on GPU 0 (host RAM 5.9 GB free)
+[ 2733.8s] s-008-L-4--s-008-L-5_2: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[ 2735.9s] s-008-L-4--s-008-L-5_1: low-noise steps lost on GPU 1 (ComfyUI 1 died (exit -9: killed (SIGKILL), most likely out of host RAM; host RAM 30.3 GB free now, lowest seen 0.2 GB)); will try again
+[ 2769.4s] s-008-L-4--s-008-L-5_1: low-noise steps on GPU 0 (host RAM 29.6 GB free)
+[ 2769.9s] s-008-L-4--s-008-L-5_2: low-noise steps on GPU 1 (host RAM 29.5 GB free)
+[ 3100.2s] s-008-L-4--s-008-L-5_1: done, low-noise + decode 330.7s on GPU 0
+[ 3100.2s] s-009-L-1: low-noise steps on GPU 0 (host RAM 12.8 GB free)
+[ 3211.3s] s-008-L-4--s-008-L-5_2: done, low-noise + decode 441.5s on GPU 1
+[ 3211.4s] s-009-R-2--s-009-R-3_1: low-noise steps on GPU 1 (host RAM 9.0 GB free)
+[ 3501.4s] s-009-R-2--s-009-R-3_1: done, low-noise + decode 290.1s on GPU 1
+[ 3501.4s] s-010-L-1: low-noise steps on GPU 1 (host RAM 6.0 GB free)
+[ 3565.3s] s-009-L-1: done, low-noise + decode 465.1s on GPU 0
+[ 3565.3s] s-009-R-2--s-009-R-3_2: low-noise steps on GPU 0 (host RAM 3.2 GB free)
+[ 3587.5s] s-009-R-2--s-009-R-3_2: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[ 3622.8s] s-009-R-2--s-009-R-3_2: low-noise steps on GPU 0 (host RAM 15.3 GB free)
+[ 3941.4s] s-009-R-2--s-009-R-3_2: done, low-noise + decode 318.6s on GPU 0
+[ 3941.4s] s-010-L-2: low-noise steps on GPU 0 (host RAM 6.7 GB free)
+[ 4115.2s] s-010-L-1: done, low-noise + decode 613.8s on GPU 1
+[ 4115.2s] s-010-R-4: low-noise steps on GPU 1 (host RAM 3.2 GB free)
+[ 4334.2s] s-010-L-2: done, low-noise + decode 392.8s on GPU 0
+[ 4334.2s] s-010-L-3: low-noise steps on GPU 0 (host RAM 2.0 GB free)
+[ 4397.3s] s-010-R-4: low-noise steps lost on GPU 1 ([Errno 104] Connection reset by peer); will try again
+[ 4397.3s] s-010-L-3: low-noise steps lost on GPU 0 (<urlopen error [Errno 111] Connection refused>); will try again
+[ 4434.2s] s-010-L-3: low-noise steps on GPU 1 (host RAM 29.6 GB free)
+[ 4434.6s] s-010-R-4: low-noise steps on GPU 0 (host RAM 29.6 GB free)
+[ 4973.3s] s-010-R-4: done, low-noise + decode 538.7s on GPU 0
+[ 4973.3s] s-011-R-1: low-noise steps on GPU 0 (host RAM 11.5 GB free)
+[ 5287.8s] s-010-L-3: done, low-noise + decode 853.6s on GPU 1
+[ 5389.0s] s-011-R-1: done, low-noise + decode 415.7s on GPU 0
+[ 5390.3s] finished: 12/12 clip(s) in 5390s
