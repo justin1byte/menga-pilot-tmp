@@ -1,2 +1,2 @@
-naichiangpai/menga-wan22 has status "KernelWorkerStatus.RUNNING"
-2026-11-14T06:16:47Z
+naichiangpai/menga-wan22 has status "KernelWorkerStatus.COMPLETE"
+2026-11-14T06:30:44Z
